@@ -1,14 +1,178 @@
-*{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00a8e8;
+    --secondary-color: #007ea7;
+    --bg-light: #003459;
+    --bg-dark: #00171f;
+    --white-color: #ffffff;
+    --light-color: #cecece;
+
+    /* Gradient Color */
+
+}
+
+body {
+    background: -moz-linear-gradient(90deg, #011f34 0%, var(--bg-dark) 100%);
+    background: -webkit-linear-gradient(90deg, #011f34 0%, var(--bg-dark) 100%);
+    background: linear-gradient(90deg, #011f34 0%, var(--bg-dark) 100%);
     font-family: "Poppins", "sans-serif";
 }
 
-/* 
-color1 = #00171f
-color2 = #003459
-color3 = #007ea7
-color4 = #00a8e8
-color5 = #ffffff
-*/
+a,
+a:focus {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+input,
+input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.btn {
+    outline: none;
+    border: none;
+}
+
+section{
+    padding-top: 70px;
+}
+
+
+/* ---------------------------------------
+Style Section
+--------------------------------------- */
+
+/* ========= Header Section ========== */
+header {
+    background: linear-gradient(90deg, #01375e 0%, var(--bg-light) 100%);
+}
+
+header .logo {
+    font-size: 24px;
+    background: linear-gradient(to top,  var(--white-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .logo img{
+    height: 50px;
+}
+
+header .logo h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+header .navbar-nav .nav-link{
+    color: var(--white-color) !important;
+    margin-right: 16px;
+}
+
+.navbar-nav a:hover{
+    color: var(--secondary-color);
+}
+
+header .navbar-toggler,
+header .navbar-toggler:focus{
+    color: var(--white-color);
+    box-shadow: none;
+}
+
+
+footer{
+    background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
+}
+
+footer .footer-section h3{
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+footer .footer-section ul li{
+    color: var(--light-color);
+    margin-top: 16px;
+    font-weight: 400;
+}
+
+footer .footer-section .copyright{
+    color: var(--white-color);
+}
+
+footer .footer-section .copyright span{
+    color: var(--primary-color);
+}
+
+footer .footer-section .get-touch{
+    padding: 32px;
+    border-radius: 12px;
+    background-color: var(--bg-light);
+}
+
+footer .footer-section .get-touch h2{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+footer .footer-section .get-touch p{
+    color: var(--light-color);
+}
+
+footer .footer-section .touch-filed input:focus,
+footer .footer-section .touch-filed input{
+    border: none;
+    box-shadow: none;
+}
+
+footer .footer-section .touch-filed .btn-touch{
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 0 32px;
+    color: var(--white-color);
+}
+
+/* ---------------------------------------
+Responsive Section
+--------------------------------------- */
+
+/* ========= Laptop Device ========== */
+
+@media (max-width: 1400px) {}
+
+/* ========= Tablet Device ========== */
+
+@media (max-width: 993px) {}
+
+/* ========= Mobile Device ========== */
+
+@media (max-width: 768px) {}
