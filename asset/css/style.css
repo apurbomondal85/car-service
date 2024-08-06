@@ -61,6 +61,22 @@ input:focus{
     border: none;
 }
 
+.btn-primary{
+    padding: 10px 24px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px 0 10px 0;
+    transition: all .5 ease-in-out;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
 section{
     padding-top: 70px;
 }
@@ -70,7 +86,7 @@ section{
 Style Section
 --------------------------------------- */
 
-/* ========= Header Section ========== */
+/* ========= Header Section Start ========== */
 header {
     background: linear-gradient(90deg, #01375e 0%, var(--bg-light) 100%);
 }
@@ -109,7 +125,73 @@ header .navbar-toggler:focus{
     color: var(--white-color);
     box-shadow: none;
 }
+/* ========= Header Section End ========== */
 
+/* ========= Hero Section Start ========== */
+
+.hero .hero-slide{
+    height: 650px;
+}
+
+.hero .hero-text{
+    height: 650px;
+}
+
+.hero .hero-text>div{
+    height: 100%;
+}
+
+.hero .hero-text h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.hero .hero-text h4::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
+    margin-top: 8px;
+}
+
+.hero .hero-text h1{
+    font-size: 48px;
+    letter-spacing: .4px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin: 16px 0;
+}
+
+.hero .hero-text p{
+    color: var(--light-color);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.hero .hero-img img {
+    animation: img-moving 6s infinite ease-in-out;
+}
+
+@keyframes img-moving {
+    0% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.hero .swiper-pagination-bullet{
+    background-color: var(--white-color);
+}
+
+/* ========= Hero Section End ========== */
 
 footer{
     background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
