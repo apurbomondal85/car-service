@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
         effect: "cube"
     });
 
+    // Team slider
+
     var teamSwiper = new Swiper(".teamSwiper", {
         slidesPerView: 5,
         spaceBetween: 40,
