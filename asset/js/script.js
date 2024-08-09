@@ -15,4 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
         effect: "cube"
     });
 
+    var teamSwiper = new Swiper(".teamSwiper", {
+        slidesPerView: 5,
+        spaceBetween: 40,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+      });
+
 });

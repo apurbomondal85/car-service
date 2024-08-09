@@ -91,6 +91,7 @@ input:focus{
     font-weight: 500 !important;
     letter-spacing: .5px;
     font-family: "Roboto";
+    color: var(--primary-color);
 }
 
 section{
@@ -431,6 +432,94 @@ header .navbar-toggler:focus{
 }
 
 /* ========= Portfolio Section End ========== */
+
+/* ========= Team Section Start ========== */
+
+.team .bar::after{
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.team-card{
+    height: 310px;
+    border: 1px solid var(--bg-light);
+    transition: all .4s ease-in-out;
+}
+
+.team-card .team-shape{
+    height: 285px;
+    border: 1px solid var(--bg-light);
+    transform: translateX(20px) translateY(-20px);
+    z-index: -1;
+}
+
+.team-card .team-shape .trans{
+    height: 65%;
+}
+
+.team-card .team-shape .shape-black {
+    height: 35%;
+    background: var(--bg-dark);
+    padding: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.team-body .team-img{
+    height: 65%;
+    width: 100%;
+}
+
+.team-text{
+    height: 35%;
+    padding: 12px;
+    padding-left: 35px;
+}
+
+.team-text .team-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white-color);
+    padding-bottom: 0px;
+    transition: all .4s ease-in-out;
+}
+
+.team-text .team-info{
+    font-size: 14px;
+   margin-top: 20px;
+   color: var(--light-color);
+   transition: all .4s ease-in-out;
+}
+
+.team-text .team-info .phone{
+    color: var(--primary-color);
+ }
+
+.team-text .sup-title{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+    transition: all .4s ease-in-out;
+ }
+
+ .team-img img{
+    transition: all .4s ease-in-out;
+ }
+
+.team-card:hover .team-text .team-info{
+    color: var(--white-color);
+}
+
+.team-card:hover{
+    border: 1px solid var(--white-color);
+}
+
+.team-card:hover .team-img img{
+    transform: scale(1.1);
+}
+
+/* ========= Team Section End ========== */
 
 footer{
     background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
