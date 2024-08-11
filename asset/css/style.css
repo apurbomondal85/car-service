@@ -642,12 +642,26 @@ header .navbar-toggler:focus{
     font-weight: 600;
     color: var(--light-color);
     font-size: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.5px;
+    font-style: italic;
 }
 
 .form-section{
      background: rgba(0, 23, 31, 0.8);
      border-radius: 10px;
      padding: 35px;
+}
+
+.form-section .form-title{
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-section .form-title .bar::after{
+    margin-top: 8px;
 }
 
 .form-section input, .textarea {
@@ -673,6 +687,93 @@ header .navbar-toggler:focus{
 }
 
 /* ========= Contact Section End ========== */
+
+/* ========= Price Section End ========== */
+.price h6{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.price .price-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price .price-card{
+    background: linear-gradient(90deg, #00090b 0%, var(--bg-dark) 100%);
+    border-radius: 15px;
+    border: 1px solid var(--light-color);
+    height: 480px;
+    padding: 25px;
+    box-shadow: 0px 0px 5px 1px #14b5f4;
+}
+
+.price .price-card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.price .bar::after{
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price .card-icon{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.price .card-money{
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+.price .card-time{
+    font-weight: normal;
+    color: var(--light-color);
+}
+
+.price .card-title{
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: 600;
+    margin: 0px 0px;
+}
+
+.price .price-card .li-item{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.price .card-check{
+    color: var(--secondary-color);
+}
+
+.price .card-list-info{
+    font-size: 14px;
+    color: var(--light-color);
+}
+
+.price .card-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px;
+}
+
+/* ========= Price Section End ========== */
 
 footer{
     background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
