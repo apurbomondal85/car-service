@@ -868,6 +868,7 @@ header .navbar-toggler:focus {
 
 footer {
     background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
+    margin-top: 70px;
 }
 
 footer .footer-section h3 {
