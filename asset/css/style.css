@@ -866,6 +866,115 @@ header .navbar-toggler:focus {
 
 /* ========= service Section End ========== */
 
+/* ========= Projects Details Section End ========== */
+
+.projects-details .details-card{
+    max-height: 100%;
+    border: none;
+   
+}
+
+.projects-details .card-img-content img{
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    
+}
+
+.projects-details .card-body{
+    padding-top: 20px;
+    padding-left: 25px !important;
+    background: linear-gradient(90deg, #00090b 0%, var(--bg-dark) 100%);
+}
+
+.projects-details .card-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.card-info-left-div, .card-info-right-div{
+    color: var(--white-color);
+}
+
+.projects-details .card-text-title{
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.projects-details .card-text-subtitle{
+    color: var(--white-color);
+    line-height: 30px;
+    padding-right: 25px;
+}
+
+.projects-details .projects-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 350px;
+    margin: 15px 0px;
+}
+
+.projects-details .card-text{
+    padding-left: 25px;
+    padding-bottom: 50px;
+}
+
+.projects-details .details-card-nav{
+    background: linear-gradient(90deg, #05121b 0%, var(--bg-light) 100%);
+    min-height: 90%;
+    border-radius: 10px;
+}
+
+.details-nav-container{
+    padding: 25px 0px 35px 25px;
+}
+
+
+.details-nav-container h5{
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.details-nav-container > p{
+    color: var(--light-color);
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.details-nav-container h4{
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.flex-box-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--white-color);
+    margin-bottom: 25px;
+}
+
+.flex-box-item .div-image{
+    height: 100px;
+    width: 150px;
+}
+
+.flex-box-item .div-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-btn{
+    border: 1px solid var(--white-color);
+}
+
+/* ========= Projects Details Section End ========== */
+
 footer {
     background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
     margin-top: 70px;
