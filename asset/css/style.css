@@ -77,6 +77,23 @@ input:focus{
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
+.bar::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
+    margin-top: 8px;
+}
+
+.top-title{
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    letter-spacing: .5px;
+    font-family: "Roboto";
+    color: var(--primary-color);
+}
+
 section{
     padding-top: 70px;
 }
@@ -145,15 +162,6 @@ header .navbar-toggler:focus{
     font-size: 14px;
     font-weight: 700;
     color: var(--primary-color);
-}
-
-.hero .hero-text h4::after{
-    content: '';
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
-    margin-top: 8px;
 }
 
 .hero .hero-text h1{
@@ -249,15 +257,6 @@ header .navbar-toggler:focus{
     color: var(--primary-color);
 }
 
-.about-text h6::after{
-    content: '';
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
-    margin-top: 8px;
-}
-
 .about-text h2{
     font-size: 35px;
     letter-spacing: .4px;
@@ -273,6 +272,27 @@ header .navbar-toggler:focus{
     margin: 16px 0;
     padding-right: 100px;
 }
+
+.about-text .about-car-card{
+    width: 180px;
+    transform: scale(1);
+    transition: all 0.9s ease;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-color: var(--bg-light);
+    cursor: pointer;
+}
+
+.about-text .about-car-card:hover{
+    transform: scale(0.95);
+    box-shadow: 3px 3px 3px 2px rgba(80, 180, 196, 0.6);
+}
+
+.about-text .about-car-card h5{
+    font-size: 12px;
+}
+
 /* ========= About Us Section End ========== */
 
 
@@ -301,15 +321,6 @@ header .navbar-toggler:focus{
     font-size: 14px;
     font-weight: 700;
     color: var(--primary-color);
-}
-
-.banner-text h6::after{
-    content: '';
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
-    margin-top: 8px;
 }
 
 .banner-text h2{
@@ -343,7 +354,172 @@ header .navbar-toggler:focus{
     }
 }
 
-/* ========= banner Us Section End ========== */
+/* ========= Banner Us Section End ========== */
+
+/* ========= Portfolio Section start ========== */
+
+.portfolio h6{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.portfolio .bar::after{
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.portfolio h2{
+    font-size: 35px;
+    letter-spacing: .4px;
+    font-weight: 500;
+    color: var(--white-color);
+    text-align: center;
+    line-height: 45px;
+}
+
+.lon-img{
+    height: 575px;
+}
+
+.pro-r-img{
+    height: 275px;
+}
+
+.h-text{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 24px 16px;
+    transition: all .3s ease-in;
+}
+
+.pro-img:hover .h-text{
+    left: 0%;
+}
+
+.pro-img{
+    border-radius: 14px;
+}
+
+.pro-img img{
+    transition: all .7s ease-in-out;
+}
+
+.pro-img:hover img{
+    transform: scale(1.1);
+}
+
+.h-text h5{
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.h-text .pro-btn{
+    padding: 4px 8px;
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    transition: all .5s ease-in;
+}
+
+.h-text .pro-btn:hover{
+    background: var(--bg-light);
+    border: 1px solid transparent;
+}
+
+/* ========= Portfolio Section End ========== */
+
+/* ========= Team Section Start ========== */
+
+.team .bar::after{
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.team-card{
+    height: 310px;
+    border: 1px solid var(--bg-light);
+    transition: all .4s ease-in-out;
+}
+
+.team-card .team-shape{
+    height: 285px;
+    border: 1px solid var(--bg-light);
+    transform: translateX(20px) translateY(-20px);
+    z-index: -1;
+}
+
+.team-card .team-shape .trans{
+    height: 65%;
+}
+
+.team-card .team-shape .shape-black {
+    height: 35%;
+    background: var(--bg-dark);
+    padding: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.team-body .team-img{
+    height: 65%;
+    width: 100%;
+}
+
+.team-text{
+    height: 35%;
+    padding: 12px;
+    padding-left: 35px;
+}
+
+.team-text .team-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white-color);
+    padding-bottom: 0px;
+    transition: all .4s ease-in-out;
+}
+
+.team-text .team-info{
+    font-size: 14px;
+   margin-top: 20px;
+   color: var(--light-color);
+   transition: all .4s ease-in-out;
+}
+
+.team-text .team-info .phone{
+    color: var(--primary-color);
+ }
+
+.team-text .sup-title{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+    transition: all .4s ease-in-out;
+ }
+
+ .team-img img{
+    transition: all .4s ease-in-out;
+ }
+
+.team-card:hover .team-text .team-info{
+    color: var(--white-color);
+}
+
+.team-card:hover{
+    border: 1px solid var(--white-color);
+}
+
+.team-card:hover .team-img img{
+    transform: scale(1.1);
+}
+
+/* ========= Team Section End ========== */
 
 footer{
     background: linear-gradient(90deg, #04426d 0%, var(--secondary-color) 100%);
