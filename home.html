@@ -1,13 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Service</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Service</title>
+
+  <!-- ======== Bootstrap css Link ======== -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+
+  <!-- ======== Custom css Link ======== -->
+  <link rel="stylesheet" href="asset/css/style.css">
+
+  <!-- ======== Google Font Link ======== -->
+  <link rel="stylesheet" href="asset/css/font.css">
+
+  <!-- ======== Font Awesome Link ======== -->
+  <link rel="stylesheet" href="asset/css/all.min.css">
+
+  <!-- ========  Swiper Js Link ======== -->
+  <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
 </head>
+
 <body>
 
-    <h1>Car Service</h1>
-    
+  <!-- ========= Header Section Start ========= -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo d-flex align-items-center" href="#">
+          <img src="asset/images/logo.webp" alt="car service logo">
+          <h1>DriveWorx</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                <li><a class="dropdown-item" href="#">Home 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="#">About Us 1</a></li>
+                <li><a class="dropdown-item" href="#">About Us 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                <li><a class="dropdown-item" href="#">Service List</a></li>
+                <li><a class="dropdown-item" href="#">Service Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                <li><a class="dropdown-item" href="#">Blog List</a></li>
+                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ========= Header Section End ========= -->
+
+  <main>
+    <!-- ========= Hero Section Start ========= -->
+    <div class="hero" id="hero">
+      <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero-slide">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-5 hero-text">
+                  <div class=" d-flex flex-column justify-content-center align-items-start">
+                    <h4>Advanced Technology, Reliable Results</h4>
+                    <h1>Expert Diagnostics & Solutions</h1>
+                    <p>Our state-of-the-art diagnostic tools and experienced technicians ensure accurate problem
+                      identification and effective repairs for all car models.</p>
+                    <a href="#">
+                      <button class="btn btn-primary">Contact Us</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-7 h-100">
+                  <div class="h-100 hero-img d-flex flex-column justify-content-center align-items-center">
+                    <img src="asset/images/slider/slider1.webp" class="img-fluid" alt="car service hero image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero-slide">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-5 hero-text">
+                  <div class=" d-flex flex-column justify-content-center align-items-start">
+                    <h4>Quality Service Within Your Budget</h4>
+                    <h1>Keeping You On The Road</h1>
+                    <p>Choose from our range of maintenance packages designed to suit every budget without compromising
+                      on quality. Keep your car in perfect condition with our cost-effective solutions.</p>
+                    <a href="#">
+                      <button class="btn btn-primary">Contact Us</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-7 h-100">
+                  <div class="h-100 hero-img d-flex flex-column justify-content-center align-items-center">
+                    <img src="asset/images/slider/slider2.webp" class="img-fluid" alt="car service hero image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero-slide">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-5 hero-text">
+                  <div class=" d-flex flex-column justify-content-center align-items-start">
+                    <h4>Schedule Your Service Anytime, Anywhere</h4>
+                    <h1>Convenient Online Booking</h1>
+                    <p>Enjoy the convenience of booking your car service online. Our easy-to-use platform allows you to
+                      schedule an appointment at your preferred time with just a few clicks.</p>
+                    <a href="#">
+                      <button class="btn btn-primary">Contact Us</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-7 h-100">
+                  <div class="h-100 hero-img d-flex flex-column justify-content-center align-items-center">
+                    <img src="asset/images/slider/slider3.webp" class="img-fluid" alt="car service hero image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- ========= Hero Section End ========= -->
+
+    <!-- ========= About Us Section End ========= -->
+    <section id="about-us" class="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <div class="image">
+                <img class="img img-fluid w-100" src="./asset/images/workshop.webp" alt="car service About Us image">
+              </div>
+              <div class="img-background">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-text">
+              <h6>About Us</h6>
+              <h2>Our Story</h2>
+              <p>Founded in 2004, Speedy Auto Repair began as a small, family-owned business with a passion for cars and
+                a commitment to quality service. Over the years, we've grown into a full-service auto repair shop, known
+                for our reliability and expertise.</p>
+              <p>At Speedy Auto Repair, we are committed to using only the best parts and equipment to ensure your
+                vehicle runs smoothly. We also believe in giving back to our community, supporting local charities and
+                participating in community events.</p>
+              <a href="#">
+                <button class="btn btn-primary">Explore More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= About Section end ========= -->
+
+    <!-- ========= Banner Section Start ========= -->
+    <section id="banner" class="banner">
+      <div>
+        <div class="banner-section d-flex align-items-center">
+          <div class="container z-1">
+            <div class="row w-100">
+              <div class="col-lg-6">
+                <div class="banner-img">
+                  <div class="img-fluid text-center">
+                    <img src="./asset/images/banner-img.webp" alt="car service banner Us image">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-text">
+                  <h6>Rev Up Your Savings!</h6>
+                <h2>Exclusive deals on car services this month.</h2>
+                <div class="banner-button-info d-flex align-items-center gap-4">
+                  <a href="#">
+                    <button class="btn btn-primary">Read More</button>
+                  </a>
+                  <div class="banner-info">
+                    <p>24/7 Service - Call Now</p>
+                    <p>+88018-5700-00</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= Banner Section End ========= -->
+
+  </main>
+
+  <!-- ========= Footer Section Start ========= -->
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+        <div class="row py-4">
+          <div class="col-lg-2">
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>FAQ</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <h3>Services</h3>
+            <ul>
+              <li>Service1</li>
+              <li>Service2</li>
+              <li>Service3</li>
+              <li>Service4</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>+0992392944</li>
+              <li>apurbo@example.com</li>
+              <li>Old city Street,USA
+                1212 New york-3500</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="get-touch">
+              <h2>Get In Touch</h2>
+              <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus explicabo eos
+                eius, nostrum consectetur.</p>
+              <div class="touch-filed input-group">
+                <input type="email" class="form-control" placeholder="Enter Email Address">
+                <button class="btn btn-touch">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-xl-flex justify-content-between align-items-center py-3 border-1 border-top mt-4 mt-lg-0">
+          <p class="copyright">© <span>DriveWorx</span> 2024 | All Rights Reserved</p>
+          <div class="d-flex align-items-center mt-3 mt-xl-0">
+            <a href="#">Terms & Condition</a>
+            <a href="#" class="mx-4">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ========= Footer Section End ========= -->
+
+  <!-- ======== Bootstrap js Link ======== -->
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ======== Custom js Link ======== -->
+  <script src="asset/js/script.js"></script>
+
+  <!-- ======== Swiper js Link ======== -->
+  <script src="asset/js/swiper-bundle.min.js"></script>
 </body>
+
 </html>
