@@ -98,6 +98,21 @@ section {
     padding-top: 70px;
 }
 
+.dredcom{
+    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dredcom h3{
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 600;
+}
+
 /* ---------------------------------------
 Style Section
 --------------------------------------- */
@@ -544,6 +559,7 @@ header .navbar-toggler:focus {
     font-weight: 700;
     color: var(--primary-color);
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -584,8 +600,9 @@ header .navbar-toggler:focus {
 }
 
 .card .card-body .blogs-title {
+    margin-top: 5px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--light-color);
 }
 
@@ -923,7 +940,6 @@ header .navbar-toggler:focus {
 
 .projects-details .details-card-nav{
     background: linear-gradient(90deg, #05121b 0%, var(--bg-light) 100%);
-    min-height: 80%;
     border-radius: 10px;
 }
 
@@ -1010,7 +1026,7 @@ header .navbar-toggler:focus {
     display: flex;
     gap: 8px;
     align-items: center;
-    margin: 85px 0px 10px 0px;
+   margin-bottom: 20px;
 }
 
 .blog-details .card-title{
@@ -1050,7 +1066,6 @@ header .navbar-toggler:focus {
 
 .blog-details .details-card-nav{
     background: linear-gradient(90deg, #05121b 0%, var(--bg-light) 100%);
-    min-height: 80%;
     border-radius: 10px;
 }
 
@@ -1116,7 +1131,12 @@ header .navbar-toggler:focus {
 
 /* ========= Blog Details Section End ========== */
 
-/* ========= Blog Details Section start ========== */
+/* ========= service Details Section start ========== */
+
+.common-margin-top{
+    margin-top: 120px;
+}
+
 
 .service-grid-container{
     display: grid;
@@ -1127,11 +1147,20 @@ header .navbar-toggler:focus {
     margin-top: 100px;
 }
 
-.common-margin-top{
-    margin-top: 120px;
+/* ========= service Details Section end ========== */
+
+/* ========= blog list Section start ========== */
+
+
+.blog-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-/* ========= Blog Details Section End ========== */
+/* ========= blog list Section end ========== */
 
 
 
