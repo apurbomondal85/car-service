@@ -178,6 +178,13 @@ header .navbar-toggler:focus {
     box-shadow: none;
 }
 
+#header {
+    top: 0;
+    z-index: 100; 
+    width: 100%;
+  }
+  
+
 /* ========= Header Section End ========== */
 
 /* ========= Hero Section Start ========== */

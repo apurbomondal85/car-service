@@ -38,5 +38,24 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: ".swiper-button-prev",
     },
   });
-  
+
+
+  const navbar = document.getElementById("header");
+
+
+  const sticky = navbar.offsetTop + 200;
+
+
+  function stickyNavbar() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("position-sticky");
+    } else {
+      navbar.classList.remove("position-sticky");
+    }
+  }
+
+  window.onscroll = function () {
+    stickyNavbar();
+  };
+
 });
