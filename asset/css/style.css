@@ -98,7 +98,7 @@ section {
     padding-top: 70px;
 }
 
-.dredcom{
+.dredcom {
     background: linear-gradient(90deg, #010c14 0%, #021c2e 100%);
     height: 250px;
     display: flex;
@@ -107,13 +107,13 @@ section {
 
 }
 
-.dredcom h3{
+.dredcom h3 {
     color: var(--white-color);
     font-size: 32px;
     font-weight: 600;
 }
 
-.pages{
+.pages {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,14 +122,14 @@ section {
     color: var(--white-color);
 }
 
-.active-page-item{
+.active-page-item {
     padding: 10px 16px;
     background: var(--secondary-color);
     border-radius: 2px;
 }
 
-.next-page{
-    background: var(--bg-dark,100%);
+.next-page {
+    background: var(--bg-dark, 100%);
     padding: 10px 16px;
     border-radius: 2px;
 }
@@ -180,10 +180,10 @@ header .navbar-toggler:focus {
 
 #header {
     top: 0;
-    z-index: 100; 
+    z-index: 100;
     width: 100%;
-  }
-  
+}
+
 
 /* ========= Header Section End ========== */
 
@@ -896,14 +896,14 @@ header .navbar-toggler:focus {
 
 /* swiperjs btn */
 
-.service-nav{
+.service-nav {
     height: 55px !important;
     width: 55px !important;
     border-radius: 50%;
     background-color: var(--primary-color);
 }
 
-.service-nav::after{
+.service-nav::after {
     font-size: 20px !important;
     color: var(--white-color) !important;
 }
@@ -913,47 +913,48 @@ header .navbar-toggler:focus {
 
 /* ========= Projects Details Section End ========== */
 
-.projects-details .details-card{
+.projects-details .details-card {
     max-height: 100%;
     border: none;
-   
+
 }
 
-.projects-details .card-img-content img{
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-    
+.projects-details .card-img-content img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
-.projects-details .card-body{
+.projects-details .card-body {
     padding-top: 20px;
     padding-left: 25px !important;
     background: linear-gradient(90deg, #00090b 0%, var(--bg-dark) 100%);
 }
 
-.projects-details .card-title{
+.projects-details .card-title {
     font-size: 24px;
     font-weight: bold;
     color: var(--white-color);
 }
 
-.card-info-left-div, .card-info-right-div{
+.card-info-left-div,
+.card-info-right-div {
     color: var(--white-color);
 }
 
-.projects-details .card-text-title{
+.projects-details .card-text-title {
     font-size: 18px;
     color: var(--white-color);
     font-weight: bold;
 }
 
-.projects-details .card-text-subtitle{
+.projects-details .card-text-subtitle {
     color: var(--white-color);
     line-height: 30px;
     padding-right: 25px;
 }
 
-.projects-details .blog-icon-container{
+.projects-details .blog-icon-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -961,21 +962,21 @@ header .navbar-toggler:focus {
     margin: 15px 0px;
 }
 
-.projects-details .card-text{
+.projects-details .card-text {
     padding-left: 25px;
     padding-bottom: 50px;
 }
 
-.projects-details .details-card-nav{
+.projects-details .details-card-nav {
     background: linear-gradient(90deg, #05121b 0%, var(--bg-light) 100%);
     border-radius: 10px;
 }
 
-.details-nav-container{
+.details-nav-container {
     padding: 25px 0px 35px 25px;
 }
 
-.projects-icon-container{
+.projects-icon-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -984,26 +985,26 @@ header .navbar-toggler:focus {
 }
 
 
-.details-nav-container h5{
+.details-nav-container h5 {
     color: var(--light-color);
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 26px;
 }
 
-.details-nav-container > p{
+.details-nav-container>p {
     color: var(--light-color);
     font-weight: lighter;
     margin-bottom: 40px;
 }
 
-.details-nav-container h4{
+.details-nav-container h4 {
     color: var(--light-color);
     font-size: 18px;
     font-weight: bold;
 }
 
-.flex-box-item{
+.flex-box-item {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -1011,17 +1012,17 @@ header .navbar-toggler:focus {
     margin-bottom: 25px;
 }
 
-.flex-box-item .div-image{
+.flex-box-item .div-image {
     height: 70px;
     width: 100px;
 }
 
-.flex-box-item .div-image img{
+.flex-box-item .div-image img {
     width: 100%;
     height: 100%;
 }
 
-.projects-date-time{
+.projects-date-time {
     color: var(--light-color);
     font-style: italic;
 }
@@ -1031,55 +1032,56 @@ header .navbar-toggler:focus {
 
 /* ========= Blog Details Section End ========== */
 
-.blog-details .details-card{
+.blog-details .details-card {
     max-height: 100%;
     border: none;
-   
+
 }
 
-.blog-details .card-img-content img{
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-    
+.blog-details .card-img-content img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
-.blog-details .card-body{
+.blog-details .card-body {
     padding-top: 20px;
     padding-left: 25px !important;
     background: linear-gradient(90deg, #00090b 0%, var(--bg-dark) 100%);
 }
 
-.type-list{
+.type-list {
     color: var(--light-color);
     display: flex;
     gap: 8px;
     align-items: center;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.blog-details .card-title{
+.blog-details .card-title {
     font-size: 24px;
     font-weight: bold;
     color: var(--white-color);
 }
 
-.card-info-left-div, .card-info-right-div{
+.card-info-left-div,
+.card-info-right-div {
     color: var(--white-color);
 }
 
-.blog-details .card-text-title{
+.blog-details .card-text-title {
     font-size: 18px;
     color: var(--white-color);
     font-weight: bold;
 }
 
-.blog-details .card-text-subtitle{
+.blog-details .card-text-subtitle {
     color: var(--white-color);
     line-height: 30px;
     padding-right: 25px;
 }
 
-.blog-details .blog-icon-container{
+.blog-details .blog-icon-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1087,41 +1089,41 @@ header .navbar-toggler:focus {
     margin: 15px 0px;
 }
 
-.blog-details .card-text{
+.blog-details .card-text {
     padding-left: 25px;
     padding-bottom: 50px;
 }
 
-.blog-details .details-card-nav{
+.blog-details .details-card-nav {
     background: linear-gradient(90deg, #05121b 0%, var(--bg-light) 100%);
     border-radius: 10px;
 }
 
-.details-nav-container{
+.details-nav-container {
     padding: 25px 0px 35px 25px;
 }
 
 
-.details-nav-container h5{
+.details-nav-container h5 {
     color: var(--light-color);
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 26px;
 }
 
-.details-nav-container > p{
+.details-nav-container>p {
     color: var(--light-color);
     font-weight: lighter;
     margin-bottom: 40px;
 }
 
-.details-nav-container h4{
+.details-nav-container h4 {
     color: var(--light-color);
     font-size: 18px;
     font-weight: bold;
 }
 
-.flex-box-item{
+.flex-box-item {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -1129,30 +1131,30 @@ header .navbar-toggler:focus {
     margin-bottom: 25px;
 }
 
-.flex-box-item .div-image{
+.flex-box-item .div-image {
     height: 70px;
     width: 100px;
 }
 
-.flex-box-item .div-image img{
+.flex-box-item .div-image img {
     width: 100%;
     height: 100%;
 }
 
-.blog-date-time{
+.blog-date-time {
     color: var(--light-color);
     font-style: italic;
 }
 
 
-.nav-end-text{
+.nav-end-text {
     background: linear-gradient(90deg, #00090b 0%, var(--bg-dark) 100%);
     padding: 10px;
     color: var(--light-color);
     border-radius: 5px;
 }
 
-.tags-container{
+.tags-container {
     display: flex;
     gap: 10px;
 }
@@ -1161,12 +1163,12 @@ header .navbar-toggler:focus {
 
 /* ========= service Details Section start ========== */
 
-.common-margin-top{
+.common-margin-top {
     margin-top: 120px;
 }
 
 
-.service-grid-container{
+.service-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
@@ -1180,7 +1182,7 @@ header .navbar-toggler:focus {
 /* ========= blog list Section start ========== */
 
 
-.blog-grid-container{
+.blog-grid-container {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     justify-content: space-between;
@@ -1192,30 +1194,30 @@ header .navbar-toggler:focus {
 
 /* ========= feedback Section end ========== */
 
-.feedback-gird-container{
+.feedback-gird-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-.feedback-card{
+.feedback-card {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.feedback-card h4{
+.feedback-card h4 {
     color: var(--white-color);
     margin-top: 10px;
     font-size: 35px;
     font-weight: 700;
 }
 
-.feedback-card p{
+.feedback-card p {
     color: var(--light-color);
 }
 
-.feedback-icon{
+.feedback-icon {
     font-size: 50px;
     color: var(--light-color);
 }
@@ -1296,8 +1298,165 @@ Responsive Section
 
 /* ========= Tablet Device ========== */
 
-@media (max-width: 993px) {}
+@media (max-width: 993px) {
+
+    /* ========= hero Section start ========== */
+
+    .hero .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .hero .hero-text>div {
+        height: 60%;
+    }
+
+    .hero .hero-slide {
+        height: 600px;
+    }
+
+    .hero .hero-text {
+        margin-top: 50px;
+        height: 250px;
+    }
+
+    /* ========= hero Section start ========== */
+
+    /* ========= About Section start ========== */
+
+    .about-img .img-background {
+        max-width: 520px;
+        max-height: 410px;
+        background: linear-gradient(90deg, #01375e 0%, var(--secondary-color) 100%);
+        position: relative;
+        left: 14px;
+        z-index: 1;
+        border-radius: 0 8px 8px 0;
+        transition: all .5s ease-in-out;
+    }
+
+    .about-img .image {
+        position: absolute;
+        padding-right: 5px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-text {
+        margin-top: 80px;
+    }
+
+    .about-text p {
+        color: var(--light-color);
+        font-weight: 400;
+        font-size: 14px;
+        margin: 16px 0;
+        padding-right: 0px;
+    }
+
+
+    .about-text h2 {
+        font-size: 25px;
+        letter-spacing: .4px;
+        font-weight: 500;
+        color: var(--white-color);
+        margin-top: 32px;
+    }
+
+    .image {
+        overflow: hidden;
+        position: relative;
+        right: 30px;
+        max-width: 500px;
+    }
+
+    .about-text .about-car-card {
+        width: 180;
+    }
+
+    /* ========= About Section end ========== */
+}
 
 /* ========= Mobile Device ========== */
 
-@media (max-width: 768px) {}
+@media (max-width: 767px) {
+
+    /* ========= hero Section start ========== */
+    .hero .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .hero .hero-text>div {
+        height: 60%;
+    }
+
+    .hero .hero-slide {
+        height: 600px;
+    }
+
+    .hero .hero-text {
+        margin-top: 20px;
+        height: 250px;
+    }
+
+    /* ========= hero Section end ========== */
+
+    /* ========= About Section start ========== */
+
+    .about-img .img-background {
+        max-width: 520px;
+        max-height: 410px;
+        background: linear-gradient(90deg, #01375e 0%, var(--secondary-color) 100%);
+        position: relative;
+        left: 14px;
+        z-index: 1;
+        border-radius: 0 8px 8px 0;
+        transition: all .5s ease-in-out;
+    }
+
+    .about-img .image {
+        position: absolute;
+        padding-right: 5px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-text {
+        margin-top: 80px;
+    }
+
+    .about-text p {
+        color: var(--light-color);
+        font-weight: 400;
+        font-size: 14px;
+        margin: 16px 0;
+        padding-right: 0px;
+    }
+
+
+    .about-text h2 {
+        font-size: 25px;
+        letter-spacing: .4px;
+        font-weight: 500;
+        color: var(--white-color);
+        margin-top: 32px;
+    }
+
+    .image {
+        overflow: hidden;
+        position: relative;
+        right: 30px;
+    }
+
+    .about-text .about-car-card {
+        width: 100%;
+    }
+
+    /* ========= About Section end ========== */
+
+
+
+}
