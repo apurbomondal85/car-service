@@ -1031,12 +1031,11 @@ header .navbar-toggler:focus {
 
 
 /* ========= Blog Details Section End ========== */
-
 .blog-details .details-card {
-    max-height: 100%;
-    border: none;
-
-}
+        max-height: 100%;
+        border: none;
+        max-width: 800px;
+    }
 
 .blog-details .card-img-content img {
     border-top-left-radius: 10px;
@@ -1209,7 +1208,7 @@ header .navbar-toggler:focus {
 .feedback-card h4 {
     color: var(--white-color);
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -1218,7 +1217,7 @@ header .navbar-toggler:focus {
 }
 
 .feedback-icon {
-    font-size: 50px;
+    font-size: 40px;
     color: var(--light-color);
 }
 
@@ -1300,6 +1299,15 @@ Responsive Section
 
 @media (max-width: 993px) {
 
+    /* common Section Start */
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+
+    /* common Section end */
+
+
     /* ========= hero Section start ========== */
 
     .hero .hero-text h1 {
@@ -1326,21 +1334,12 @@ Responsive Section
     .about-img .img-background {
         max-width: 520px;
         max-height: 410px;
-        background: linear-gradient(90deg, #01375e 0%, var(--secondary-color) 100%);
-        position: relative;
         left: 14px;
-        z-index: 1;
-        border-radius: 0 8px 8px 0;
-        transition: all .5s ease-in-out;
     }
 
     .about-img .image {
-        position: absolute;
         padding-right: 5px;
         z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .about-text {
@@ -1348,25 +1347,19 @@ Responsive Section
     }
 
     .about-text p {
-        color: var(--light-color);
         font-weight: 400;
         font-size: 14px;
         margin: 16px 0;
         padding-right: 0px;
     }
 
-
     .about-text h2 {
         font-size: 25px;
-        letter-spacing: .4px;
         font-weight: 500;
-        color: var(--white-color);
         margin-top: 32px;
     }
 
     .image {
-        overflow: hidden;
-        position: relative;
         right: 30px;
         max-width: 500px;
     }
@@ -1376,80 +1369,128 @@ Responsive Section
     }
 
     /* ========= About Section end ========== */
+
+
+    /* ========= service Section end ========== */
+
+    .serviceSwiper {
+        margin: 0px !important;
+    }
+
+    .service-nav {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .service-nav::after {
+        font-size: 15px !important;
+    }
+
+    /* ========= service Section end ========== */
+
+    /* ========= banner Section start ========== */
+
+    .banner-img img {
+        height: 150px;
+    }
+
+    .banner-text h2 {
+        font-size: 24px;
+    }
+
+    /* ========= banner Section end ========== */
+
+    /* ========= blogs Section end ========== */
+
+    .blog-grid-container {
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+
+    /* ========= blogs Section end ========== */
+
+    /* ========= contact Section end ========== */
+
+    .contact-main .contact-info .form-text-title {
+        font-size: 32px;
+        padding-right: 10px;
+    }
+
+    /* ========= contact Section end ========== */
+
+    .blog-details .details-card {
+        max-height: 100%;
+        border: none;
+        max-width: 800px;
+
+    }
+
+    /* ========= blogs Section end ========== */
+
+    .card .blogs-content {
+        max-width: 750px;
+        height: 250px;
+    }
+
+    .card .blogs-content img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ========= blogs Section end ========== */
+
+    /* ========= service Section start ========== */
+
+    .service-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fix-margin {
+        margin-top: 120px;
+    }
+
+    /* ========= service Section end ========== */
+
+    /* ========= portfolio Section start ========== */
+
+    .lon-img {
+        height: 575px !important;
+    }
+
+    .h-text h5 {
+        font-size: 16px;
+    }
+
+    .h-text .pro-btn {
+        padding: 4px;
+    }
+
+    /* ========= portfolio Section end ========== */
+
+    /* ========= service Section start ========== */
+
+    .blog-details .card-title {
+        font-size: 24px;
+    }
+
+    .blog-details .card-text {
+        padding-left: 10px;
+    }
+
+    /* ========= service Section end ========== */
+
 }
 
 /* ========= Mobile Device ========== */
 
 @media (max-width: 767px) {
 
-    /* ========= hero Section start ========== */
-    .hero .hero-text h1 {
-        font-size: 25px;
+    .dredcom h3 {
+        font-size: 28px;
     }
-
-    .hero .hero-text>div {
-        height: 60%;
-    }
-
-    .hero .hero-slide {
-        height: 600px;
-    }
-
-    .hero .hero-text {
-        margin-top: 20px;
-        height: 250px;
-    }
-
-    /* ========= hero Section end ========== */
 
     /* ========= About Section start ========== */
 
-    .about-img .img-background {
-        max-width: 520px;
-        max-height: 410px;
-        background: linear-gradient(90deg, #01375e 0%, var(--secondary-color) 100%);
-        position: relative;
-        left: 14px;
-        z-index: 1;
-        border-radius: 0 8px 8px 0;
-        transition: all .5s ease-in-out;
-    }
-
-    .about-img .image {
-        position: absolute;
-        padding-right: 5px;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .about-text {
-        margin-top: 80px;
-    }
-
-    .about-text p {
-        color: var(--light-color);
-        font-weight: 400;
-        font-size: 14px;
-        margin: 16px 0;
-        padding-right: 0px;
-    }
-
-
-    .about-text h2 {
-        font-size: 25px;
-        letter-spacing: .4px;
-        font-weight: 500;
-        color: var(--white-color);
-        margin-top: 32px;
-    }
-
-    .image {
-        overflow: hidden;
-        position: relative;
-        right: 30px;
-    }
 
     .about-text .about-car-card {
         width: 100%;
@@ -1457,6 +1498,91 @@ Responsive Section
 
     /* ========= About Section end ========== */
 
+    /* ========= banner Section start ========== */
 
+    .banner-img img {
+        height: 90px;
+    }
+
+    .banner-text h2 {
+        font-size: 18px;
+    }
+
+    .banner-text .banner-info p {
+        font-size: 12px;
+    }
+
+
+    /* ========= banner Section end ========== */
+
+    /* ========= prince Section end ========== */
+    .price .price-card {
+        width: 300px;
+    }
+
+    /* ========= prince Section end ========== */
+
+    /* ========= blogs Section end ========== */
+
+    .blog-grid-container {
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .blog-grid-container .card {
+        padding: 0px;
+    }
+
+
+    /* ========= blogs Section end ========== */
+
+    /* ========= contact Section end ========== */
+
+    .contact-main .contact-info {
+        display: none;
+    }
+
+    /* ========= contact Section end ========== */
+
+    /* ========= service Section end ========== */
+
+    .service-grid-container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fix-margin {
+        margin-top: 0px;
+    }
+
+    .common-margin-top-mobile {
+        margin-top: 120px;
+    }
+
+    /* ========= service Section end ========== */
+
+    /* ========= portfolio Section start ========== */
+
+    .lon-img {
+        height: 275px !important;
+    }
+
+    .portfolio-image-2 {
+        margin: 30px 0px;
+    }
+
+    /* ========= portfolio Section end ========== */
+
+    /* ========= service Section start ========== */
+
+    .blog-details .card-title {
+        font-size: 22px;
+    }
+
+    .blog-details .card-text {
+        padding-left: 15px;
+        font-size: 16px;
+    }
+
+    /* ========= service Section end ========== */
 
 }
