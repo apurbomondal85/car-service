@@ -99,7 +99,7 @@
   <main>
 
     <!-- ========= Hero Section Start ========= -->
-    <div class="hero" id="hero">
+    <section class="hero" id="hero">
       <div class="swiper heroSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide hero-slide">
@@ -171,10 +171,11 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </div>
+    </section>
     <!-- ========= Hero Section End ========= -->
 
     <!-- ========= About Us Section Start ========= -->
+
     <section id="about-us" class="about-us">
       <div class="container">
         <div class="row">
@@ -194,18 +195,18 @@
               <p>Founded in 2004, Speedy Auto Repair began as a small, family-owned business with a passion for cars and
                 a commitment to quality service. Over the years, we've grown into a full-service auto repair shop, known
                 for our reliability and expertise.</p>
-              <div class="d-flex gap-3 mb-3">
-                <div class="col-4 text-center p-2 text-secondary about-car-card">
+              <div class="d-flex flex-column flex-md-row justify-content-md-between gap-3 mb-3">
+                <div class="col-md-4 text-center p-2 text-secondary about-car-card">
                   <i class="fa-solid fa-car-on fs-1 text-danger"></i>
                   <hr>
                   <h5>LARGEST CARS DEALER SHIP</h5>
                 </div>
-                <div class="col-4 text-center p-2 text-secondary about-car-card">
+                <div class="col-md-4 text-center p-2 text-secondary about-car-card">
                   <i class="fa-solid fa-life-ring fs-1 text-success"></i>
                   <hr>
                   <h5>WE OFFERS LOWER CARS PRICES</h5>
                 </div>
-                <div class="col-4 text-center p-2 text-secondary about-car-card">
+                <div class="col-md-4 text-center p-2 text-secondary about-car-card">
                   <i class="fa-solid fa-truck fs-1 text-info-emphasis"></i>
                   <hr>
                   <h5>MULTIPOINT SAFETY CHECKS OFFERS</h5>
@@ -220,9 +221,11 @@
       </div>
       </div>
     </section>
+
     <!-- ========= About Section end ========= -->
 
     <!-- ========= service Section Start ========= -->
+
     <section id="service" class="service">
       <div class="container">
         <h6 class="bar top-title">Our Best Service</h6>
@@ -320,6 +323,7 @@
         </div>
       </div>
     </section>
+
     <!-- ========= Service Section End ========= -->
 
     <!-- ========= Portfolio Section Start ========= -->
@@ -328,11 +332,11 @@
         <h6 class="bar top-title">Our Portfolio</h6>
         <div class="mt-4 pro-section">
           <div class="row h-100">
-            <div class="col-md-4">
+            <div class="col-md-4 portfolio-image-1">
               <div class="lon-img pro-img position-relative overflow-hidden">
                 <img class="w-100 h-100 img-fluid" src="./asset/images/portfolio/por-1.webp"
                   alt="car service Portfolio image">
-                <div class="h-text d-flex align-items-end justify-content-between">
+                <div class="h-text d-flex flex-column flex-lg-row align-items-start align-items-lg-end justify-content-end gap-3 justify-content-lg-between">
                   <h5>Our Transformations</h5>
                   <a href="./project-list.html">
                     <button class="btn btn-primary pro-btn">Read More <i class="fas fa-arrow-right m-1"></i></button>
@@ -342,11 +346,11 @@
             </div>
             <div class="col-md-8 h-100">
               <div class="row h-100">
-                <div class="col-md-6">
+                <div class="col-md-6 portfolio-image-2">
                   <div class="pro-r-img pro-img position-relative overflow-hidden">
                     <img class="w-100 h-100 img-fluid" src="./asset/images/portfolio/por-3.webp"
                       alt="car service Portfolio image">
-                    <div class="h-text d-flex align-items-end justify-content-between">
+                    <div  class="h-text d-flex flex-column flex-lg-row align-items-start align-items-lg-end justify-content-end gap-3 justify-content-lg-between">
                       <h5>Our Transformations</h5>
                       <a href="./project-list.html">
                         <button class="btn btn-primary pro-btn">Read More <i
@@ -359,7 +363,7 @@
                   <div class="pro-r-img pro-img position-relative overflow-hidden">
                     <img class="w-100 h-100 img-fluid" src="./asset/images/portfolio/por-4.webp"
                       alt="car service Portfolio image">
-                    <div class="h-text d-flex align-items-end justify-content-between">
+                      <div  class="h-text d-flex flex-column flex-lg-row align-items-start align-items-lg-end justify-content-end gap-3 justify-content-lg-between">
                       <h5>Our Transformations</h5>
                       <a href="./project-list.html">
                         <button class="btn btn-primary pro-btn">Read More <i
@@ -372,7 +376,7 @@
                   <div class="pro-r-img pro-img position-relative overflow-hidden">
                     <img class="w-100 h-100 img-fluid" src="./asset/images/portfolio/por-2.webp"
                       alt="car service Portfolio image">
-                    <div class="h-text d-flex align-items-end justify-content-between">
+                      <div  class="h-text d-flex flex-column flex-lg-row align-items-start align-items-lg-end justify-content-end gap-3 justify-content-lg-between">
                       <h5>Our Transformations</h5>
                       <a href="./project-list.html">
                         <button class="btn btn-primary pro-btn">Read More <i
@@ -405,7 +409,7 @@
               <div class="banner-text">
                 <h6 class="bar">Rev Up Your Savings!</h6>
                 <h2>Exclusive deals on car services this month.</h2>
-                <div class="banner-button-info d-flex align-items-center gap-4">
+                <div class="banner-button-info  d-flex align-items-center gap-3 gap-md-4">
                   <a href="#">
                     <button class="btn btn-primary">Read More</button>
                   </a>
@@ -430,8 +434,8 @@
       <div class="container">
         <div class="price-section">
           <div>
-            <div class="d-flex justify-content-between align-items-center gap-4">
-              <div class="price-card col-md-4 mt-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+              <div class="price-card col-lg-4 mt-4">
                 <div class="card-body">
                   <div class="card-header">
                     <div class="card-icon">
@@ -459,7 +463,7 @@
                   </div>
                 </div>
               </div>
-              <div class="price-card col-md-4 mt-5">
+              <div class="price-card col-lg-4 mt-4">
                 <div class="card-body">
                   <div class="card-header">
                     <div class="card-icon">
@@ -487,7 +491,7 @@
                   </div>
                 </div>
               </div>
-              <div class="price-card col-md-4 mt-5">
+              <div class="price-card col-lg-4 mt-4">
                 <div class="card-body">
                   <div class="card-header">
                     <div class="card-icon">
@@ -827,8 +831,8 @@
           </div>
         </div>
         <div class="d-xl-flex justify-content-between align-items-center py-3 border-1 border-top mt-4 mt-lg-0">
-          <p class="copyright">© <span>DriveWorx</span> 2024 | All Rights Reserved</p>
-          <div class="d-flex align-items-center mt-3 mt-xl-0">
+          <p class="copyright text-md-center">© <span>DriveWorx</span> 2024 | All Rights Reserved</p>
+          <div class="d-flex align-items-center justify-content-md-center mt-3 mt-xl-0">
             <a href="#">Terms & Condition</a>
             <a href="#" class="mx-4">Privacy Policy</a>
             <a href="#">Contact Us</a>
