@@ -25,83 +25,86 @@
 <body>
 
     <!-- ========= Header Section Start ========= -->
-    <header>
+    <header id="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-              <a class="navbar-brand logo d-flex align-items-center" href="#">
-                <img src="asset/images/logo.webp" alt="car service logo">
-                <h1>DriveWorx</h1>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Home
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="homeDropdown">
-                      <li><a class="dropdown-item" href="./home.html">Home 1</a></li>
-                      <li><a class="dropdown-item" href="#">Home 2</a></li>
+                <a class="navbar-brand logo d-flex align-items-center" href="#">
+                    <img src="asset/images/logo.webp" alt="car service logo">
+                    <h1>DriveWorx</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                <li><a class="dropdown-item" href="./home.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="./about-us.html">About Us 1</a></li>
+                                <li><a class="dropdown-item" href="#">About Us 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./service-list.html">Service List</a></li>
+                                <li><a class="dropdown-item" href="./service-details.html">Service Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./project-list.html">Projects List</a></li>
+                                <li><a class="dropdown-item" href="./project-details.html">Projects Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                <li><a class="dropdown-item" href="./blog-list.html">Blog List</a></li>
+                                <li><a class="dropdown-item" href="./blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      About Us
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                      <li><a class="dropdown-item" href="#">About Us 1</a></li>
-                      <li><a class="dropdown-item" href="#">About Us 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Services
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
-                      <li><a class="dropdown-item" href="./service-list.html">Service List</a></li>
-                      <li><a class="dropdown-item" href="./service-details.html">Service Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Projects
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
-                      <li><a class="dropdown-item" href="./project-list.html">Projects List</a></li>
-                      <li><a class="dropdown-item" href="./project-details.html">Projects Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Blog
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
-                      <li><a class="dropdown-item" href="./blog-list.html">Blog List</a></li>
-                      <li><a class="dropdown-item" href="./blog-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
-        <div class="dredcom">
-            <h3 class="text-center">Blog-Details</h3>
-          </div>
+        </nav>
     </header>
     <!-- ========= Header Section End ========= -->
+
+    <!-- ========= dredcom Section Start ========= -->
+    <div class="dredcom">
+        <h3 class="text-center">Blog-Details</h3>
+    </div>
+    <!-- ========= dredcom Section End ========= -->
 
     <main>
 
         <!-- ========= blog Details Section Start ========= -->
-
         <section id="blog-details" class="blog-details">
             <div class="container">
                 <div class="row">
@@ -197,7 +200,11 @@
                                 <div class="card-text">
                                     <h3 class="mb-2 card-text-title">What is Do dolor sit amet.</h3>
                                     <p class="card-text-subtitle">
-                                        we explore the latest trends, insights, and innovations in the industry. Whether you’re a seasoned professional or just curious about how we keep waterways navigable and ecosystems thriving, our blog offers valuable knowledge, expert opinions, and practical tips. Join us as we uncover the challenges and triumphs of [related industry] and how they impact our world.
+                                        we explore the latest trends, insights, and innovations in the industry. Whether
+                                        you’re a seasoned professional or just curious about how we keep waterways
+                                        navigable and ecosystems thriving, our blog offers valuable knowledge, expert
+                                        opinions, and practical tips. Join us as we uncover the challenges and triumphs
+                                        of [related industry] and how they impact our world.
                                     </p>
                                 </div>
 
@@ -208,7 +215,6 @@
                 </div>
             </div>
         </section>
-
         <!-- ========= blog Details Section End ========= -->
 
     </main>

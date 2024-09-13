@@ -134,11 +134,6 @@ section {
     border-radius: 2px;
 }
 
-/* .page-item:hover{
-    background: #007ea7;
-    padding: 10px 15px;
-} */
-
 /* ---------------------------------------
 Style Section
 --------------------------------------- */
@@ -182,6 +177,13 @@ header .navbar-toggler:focus {
     color: var(--white-color);
     box-shadow: none;
 }
+
+#header {
+    top: 0;
+    z-index: 100; 
+    width: 100%;
+  }
+  
 
 /* ========= Header Section End ========== */
 
@@ -1187,6 +1189,49 @@ header .navbar-toggler:focus {
 }
 
 /* ========= blog list Section end ========== */
+
+/* ========= feedback Section end ========== */
+
+.feedback-gird-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.feedback-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feedback-card h4{
+    color: var(--white-color);
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.feedback-card p{
+    color: var(--light-color);
+}
+
+.feedback-icon{
+    font-size: 50px;
+    color: var(--light-color);
+}
+
+.feedback-card:hover .feedback-icon {
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+}
+
+.feedback-card:hover .feedback-icon {
+    color: var(--primary-color);
+    transform: rotateY(360deg);
+    transition-duration: 1s;
+}
+
+/* ========= feedback Section end ========== */
 
 
 
