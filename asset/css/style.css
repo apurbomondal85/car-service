@@ -189,6 +189,10 @@ header .navbar-toggler:focus {
 
 /* ========= Hero Section Start ========== */
 
+.hero{
+    margin-top: 70px !important;
+}
+
 .hero .hero-slide {
     height: 650px;
 }
@@ -1305,6 +1309,11 @@ Responsive Section
         padding: 8px 16px;
     }
 
+    
+    .dredcom {
+        height: 200px;
+    }
+
     /* common Section end */
 
 
@@ -1357,6 +1366,7 @@ Responsive Section
         font-size: 25px;
         font-weight: 500;
         margin-top: 32px;
+        text-align: center;
     }
 
     .image {
@@ -1399,6 +1409,16 @@ Responsive Section
     }
 
     /* ========= banner Section end ========== */
+
+
+       /* ========= prince Section end ========== */
+    
+    .price .card-money {
+        font-size: 28px;
+    }
+
+    /* ========= prince Section end ========== */
+
 
     /* ========= blogs Section end ========== */
 
@@ -1485,9 +1505,59 @@ Responsive Section
 
 @media (max-width: 767px) {
 
-    .dredcom h3 {
-        font-size: 28px;
+     /* ========= Common Section start ========== */
+
+     .dredcom {
+        height: 150px;
     }
+
+    .dredcom h3 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .btn-primary {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .bar::after {
+        margin: 0px auto 0px auto;
+        margin-top: 8px;
+    }
+    
+
+     /* ========= Common Section end ========== */
+
+      /* ========= hero Section start ========== */
+
+      .hero{
+        margin-top: 50px !important;
+    }
+
+    .hero .hero-text {
+        margin-top: 40px;
+        height: 200px;
+    }
+    .hero .hero-text h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .hero .hero-text h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .hero .hero-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+
+
+     /* ========= hero Section start ========== */
+
 
     /* ========= About Section start ========== */
 
@@ -1496,6 +1566,51 @@ Responsive Section
         width: 100%;
     }
 
+    .about-img .img-background {
+        display: none;
+    }
+    .about-img {
+        position: sticky;
+    }
+    
+    .about-img .image {
+        position: sticky;
+    } 
+    
+    .image {
+        right: 0px;
+        max-width: 500px;
+        overflow: hidden;
+        position: sticky;
+    }
+
+    .about-text {
+        margin-top: 20px;
+
+    }
+
+    .about-text h6 {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .about-text h6 {
+        font-size: 12px;
+        text-align: center;
+    }
+   
+    .about-text p {
+        font-size: 14px;
+        margin: 16px 0;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .about-text .about-car-card h5 {
+        font-size: 10px;
+    }
+   
+  
     /* ========= About Section end ========== */
 
     /* ========= banner Section start ========== */
@@ -1520,6 +1635,10 @@ Responsive Section
         width: 300px;
     }
 
+    .price .card-money {
+        font-size: 32px;
+    }
+
     /* ========= prince Section end ========== */
 
     /* ========= blogs Section end ========== */
@@ -1534,6 +1653,27 @@ Responsive Section
 
 
     /* ========= blogs Section end ========== */
+
+     /* ========= team Section end ========== */
+
+     .team-card .team-shape {
+       display: none;
+    }
+
+    .team-text {
+        text-align: center;
+    }
+
+    .team-text .team-info {
+        margin-top: 2px;
+    }
+
+    .team-text .team-title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+      /* ========= team Section end ========== */
 
     /* ========= contact Section end ========== */
 
@@ -1570,6 +1710,11 @@ Responsive Section
         margin: 30px 0px;
     }
 
+    .portfolio h6 {
+        font-size: 12px;
+        text-align: center;
+    }
+
     /* ========= portfolio Section end ========== */
 
     /* ========= service Section start ========== */
@@ -1585,4 +1730,42 @@ Responsive Section
 
     /* ========= service Section end ========== */
 
+    footer .footer-section h3 {
+        font-size: 18px;
+    }
+
+    footer .footer-section ul li {
+        color: var(--light-color);
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    footer a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    footer .footer-section .touch-filed .btn-touch {
+        padding: 0px 18px;
+    }
+
+    footer .footer-section .get-touch {
+        padding: 16px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .input-group {
+        margin-top: 10px;
+    }
 }
