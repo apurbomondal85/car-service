@@ -84,3 +84,31 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
 });
+
+// Toggle grid
+
+let grid = document.getElementById('grid').childNodes;
+let bar3 = document.querySelector('.bar-3');
+let bar4 = document.querySelector('.bar-4');
+
+const grid3 = () => {
+  grid.forEach(item => {
+    if (item.nodeType === Node.ELEMENT_NODE && item.tagName === 'DIV') {
+      item.classList.remove('col-lg-3');
+      item.classList.add('col-lg-4');
+      bar3.classList.add('active');
+      bar4.classList.remove('active');
+    }
+  });
+}
+
+const grid4 = () => {
+  grid.forEach(item => {
+    if (item.nodeType === Node.ELEMENT_NODE && item.tagName === 'DIV') {
+      item.classList.remove('col-lg-4');
+      item.classList.add('col-lg-3');
+      bar4.classList.add('active');
+      bar3.classList.remove('active');
+    }
+  });
+}

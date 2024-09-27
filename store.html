@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service</title>
+
+    <!-- ======== Bootstrap css Link ======== -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+
+    <!-- ======== Custom css Link ======== -->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- ======== Google Font Link ======== -->
+    <link rel="stylesheet" href="asset/css/font.css">
+
+    <!-- ======== Font Awesome Link ======== -->
+    <link rel="stylesheet" href="asset/css/all.min.css">
+
+    <!-- ========  Swiper Js Link ======== -->
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+</head>
+
+<body>
+
+
+    <!-- ========= Header Section Start ========= -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo d-flex align-items-center" href="#">
+                    <img src="asset/images/logo.webp" alt="car service logo">
+                    <h1>DriveWorx</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                <li><a class="dropdown-item" href="./home.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="./about-us.html">About Us 1</a></li>
+                                <li><a class="dropdown-item" href="#">About Us 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./service-list.html">Service List</a></li>
+                                <li><a class="dropdown-item" href="./service-details.html">Service Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./project-list.html">Projects List</a></li>
+                                <li><a class="dropdown-item" href="./project-details.html">Projects Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                <li><a class="dropdown-item" href="./blog-list.html">Blog List</a></li>
+                                <li><a class="dropdown-item" href="./blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./store.html" role="button">
+                                Store
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========= Header Section End ========= -->
+
+    <!-- ========= dredcom Section Start ========= -->
+    <div class="dredcom">
+        <h3 class="text-center">Store</h3>
+    </div>
+    <!-- ========= dredcom Section End ========= -->
+
+    <div class="cart-bar position-fixed z-2 top-50 end-0 store-scole">
+        <i class="fa-solid fa-computer-mouse"></i>
+    </div>
+
+    <main>
+        <!-- ========= Store Section Start ========= -->
+        <section id="store" class="store">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 left-side-grid-store">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="left-side-title">Filters</h3>
+                            <p class="clear">Clear All</p>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a data-bs-toggle="collapse" href="#collapseCategories" class="nav-link" role="button"
+                                    aria-expanded="false" aria-controls="collapseCategories">
+                                    <span class="left-side-title">Categories</span> <span class="right-icon float-end">
+                                        <i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <div class="collapse mt-3 store-scrollbar" id="collapseCategories">
+                                    <div>
+                                        <ul class="navbar-nav">
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="categories-1">
+                                                    <label class="form-check-label mt-1" for="categories-1">
+                                                        Brand New Tyre
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="categories-2">
+                                                    <label class="form-check-label mt-1" for="categories-2">
+                                                        Oil Filter
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="categories-3">
+                                                    <label class="form-check-label mt-1" for="categories-3">
+                                                        Brake Disk
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="categories-4">
+                                                    <label class="form-check-label mt-1" for="categories-4">
+                                                        Steering Wheel
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a data-bs-toggle="collapse" href="#collapseBrands" class="nav-link" role="button"
+                                    aria-expanded="false" aria-controls="collapseBrands">
+                                    <span class="left-side-title">Brand's</span> <span class="right-icon float-end">
+                                        <i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <div class="collapse mt-3 store-scrollbar" id="collapseBrands">
+                                    <div>
+                                        <ul class="navbar-nav">
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Brand-1">
+                                                    <label class="form-check-label mt-1" for="Brand-1">
+                                                        BMW
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Brand-2">
+                                                    <label class="form-check-label mt-1" for="Brand-2">
+                                                        Audi
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Brand-3">
+                                                    <label class="form-check-label mt-1" for="Brand-3">
+                                                        Ferrari
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Brand-4">
+                                                    <label class="form-check-label mt-1" for="Brand-4">
+                                                        Honda
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" role="button" aria-expanded="false" aria-controls="collapsPrice">
+                                    <span class="left-side-title">Price</span> <span class="right-icon float-end">
+                                        <i data-bs-toggle="collapse" href="#collapsPrice"
+                                            class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <div class="collapse price" id="collapsPrice">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <span class="badge text-bg-primary">$0</span>
+                                        <span class="badge text-bg-primary">$500</span>
+                                        <span class="badge text-bg-primary">$1000</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Warning example"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar text-bg-primary text-dark" style="width: 75%">75%</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a data-bs-toggle="collapse" href="#collapseRating" class="nav-link" role="button"
+                                    aria-expanded="false" aria-controls="collapseRating">
+                                    <span class="left-side-title">Rating</span> <span class="right-icon float-end">
+                                        <i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <div class="collapse mt-3 store-scrollbar" id="collapseRating">
+                                    <div>
+                                        <ul class="navbar-nav">
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Rating-5">
+                                                    <label class="form-check-label mt-1" for="Rating-5">
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Rating-4">
+                                                    <label class="form-check-label mt-1" for="Rating-4">
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Rating-3">
+                                                    <label class="form-check-label mt-1" for="Rating-3">
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-link nav-font-size">
+                                                <div class="form-check">
+                                                    <input class="form-check-input me-2" type="checkbox" value=""
+                                                        id="Rating-2">
+                                                    <label class="form-check-label mt-1" for="Rating-2">
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star yellow-color"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="right-side-grid-store col-12 col-md-9">
+                        <div class="d-flex mt-5 mt-md-0 justify-content-between align-items-center">
+                            <div class="me-1 mt-2">
+                                <button type="button"
+                                    class="store-button-toggle dropdown-toggle d-flex align-items-center gap-2"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span
+                                        class="clear">Sort By : High - Low Price</span> <i
+                                        class="mdi mdi-chevron-down"></i></button>
+                                <div class="dropdown-menu" data-popper-placement="bottom-start">
+                                    <div class="dropdown-item high-low-price">
+                                        <span>Subtotal:</span>
+                                        <span> $1427</span>
+                                    </div>
+                                    <div class="dropdown-item high-low-price">
+                                        <span>Shipping:</span>
+                                        <span> $8427</span>
+                                    </div>
+                                    <div class="dropdown-item high-low-price">
+                                        <span>Total:</span>
+                                        <span> $1477</span>
+                                    </div>
+                                    <div class="dropdown-item high-low-price">
+                                        <b>Payable Total:</b>
+                                        <span> $1427</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bar-section d-flex align-items-center gap-2">
+                                <div onclick="grid3()" class="bar-3 d-flex gap-1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div onclick="grid4()" class="bar-4 active d-flex gap-1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container text-center">
+                            <div id="grid" class="row mt-5">
+
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/products-img2.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$170</p>
+                                            <h5 class="card-title store-card-title">Oil Filter</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/products-img3.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$100</p>
+                                            <h5 class="card-title store-card-title">Brake disk</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/products-img4.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star "></i>
+                                                <i class="fa-solid fa-star "></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$150</p>
+                                            <h5 class="card-title store-card-title">Car wheels</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/products-img5.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$170</p>
+                                            <h5 class="card-title store-card-title">Petrol pump</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/products-img7.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star "></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$130</p>
+                                            <h5 class="card-title store-card-title">Engine pump</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/products-img8.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$110</p>
+                                            <h5 class="card-title store-card-title">Car Steering</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/shopping-cart-1.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star "></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$140</p>
+                                            <h5 class="card-title store-card-title">Oil Filter</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col col-12 col-md-6 col-lg-3">
+                                    <div class="card overflow-visible store-single-card text-center">
+                                        <div class="card-header">
+                                            <img class="img-fluid w-100 h-100"
+                                                src="./asset/images/store/products-img9.png"
+                                                alt="car service store images">
+                                        </div>
+                                        <div class="card-body">
+                                            <label class="form-check-label mt-1 store-card-rating"
+                                                for="flexCheckDefault">
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                                <i class="fa-solid fa-star yellow-color"></i>
+                                            </label>
+                                            <div class="text-bg-secondary store-card-icon"><i
+                                                    class="fa-solid fa-cart-shopping"></i></div>
+                                            <p class="store-card-money">$190</p>
+                                            <h5 class="card-title store-card-title">Headlight</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- ========= Store Section End ========= -->
+
+        <!-- ========= Pagination Section Start ========= -->
+        <section>
+            <div class="pages">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active-page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                <li class="page-item"><a class="page-link" href="#">12</a></li>
+                <li class="page-item">
+                    <a class="next-page" href="#" aria-label="Next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+            </div>
+        </section>
+        <!-- ========= Pagination Section End ========= -->
+
+    </main>
+
+    <!-- ========= Footer Section Start ========= -->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div class="row py-4">
+                    <div class="col-6  col-md-4 col-lg-2 text-center text-lg-start">
+                        <h3>Company</h3>
+                        <ul>
+                            <li>About</li>
+                            <li>Team</li>
+                            <li>FAQ</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mt-md-0 mt-lg-0 text-center text-lg-start">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Tire Rotation</li>
+                            <li>Oil Change</li>
+                            <li>AC Repair</li>
+                            <li>Suspension Repair</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0 mt-lg-0 text-center text-lg-start">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li>+0992392944</li>
+                            <li>apurbo@example.com</li>
+                            <li>Old city Street,USA
+                                1212 New york-3500</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="get-touch">
+                            <h2>Get In Touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus explicabo eos
+                                eius, nostrum consectetur.</p>
+                            <div class="touch-filed input-group">
+                                <input type="email" class="p-1" placeholder="Enter Email Address">
+                                <button class="btn btn-touch">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-xl-flex justify-content-between align-items-center py-3 border-1 border-top mt-4 mt-lg-0">
+                    <p class="copyright text-center">© <span>DriveWorx</span> 2024 | All Rights Reserved</p>
+                    <div class="d-flex align-items-center justify-content-center mt-3 mt-xl-0">
+                        <a href="#">Terms & Condition</a>
+                        <a href="#" class="mx-4">Privacy Policy</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========= Footer Section End ========= -->
+
+
+    <!-- ======== Bootstrap js Link ======== -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ======== Custom js Link ======== -->
+    <script src="asset/js/script.js"></script>
+
+    <!-- ======== Swiper js Link ======== -->
+    <script src="asset/js/swiper-bundle.min.js"></script>
+</body>
+
+</html>
