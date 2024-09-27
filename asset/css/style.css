@@ -189,6 +189,10 @@ header .navbar-toggler:focus {
 
 /* ========= Hero Section Start ========== */
 
+.hero {
+    margin-top: 70px !important;
+}
+
 .hero .hero-slide {
     height: 650px;
 }
@@ -628,7 +632,7 @@ header .navbar-toggler:focus {
 }
 
 .card .card-body .blogs-title {
-    margin-top: 5px;
+    margin-top: -2px;
     font-size: 20px;
     font-weight: 500;
     color: var(--light-color);
@@ -777,6 +781,7 @@ header .navbar-toggler:focus {
 }
 
 .card-header {
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -824,6 +829,49 @@ header .navbar-toggler:focus {
     display: flex;
     justify-content: space-between;
     margin: 0px 0px;
+}
+
+.bar-section {
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.bar-section .bar-3,
+.bar-section .bar-4 {
+    justify-content: center;
+    padding: 6px 12px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bar-section .bar-3.active {
+    background-color: var(--white-color);
+}
+
+.bar-section .bar-3.active div {
+    background-color: var(--bg-dark);
+}
+
+.bar-section .bar-4.active {
+    background-color: var(--white-color);
+}
+
+.bar-section .bar-4.active div {
+    background-color: var(--bg-dark);
+}
+
+.bar-3 div {
+    height: 20px;
+    width: 2px;
+    background-color: var(--white-color);
+}
+
+.bar-4 div {
+    height: 20px;
+    width: 2px;
+    background-color: var(--white-color);
 }
 
 /* ========= Price Section End ========== */
@@ -1032,10 +1080,10 @@ header .navbar-toggler:focus {
 
 /* ========= Blog Details Section End ========== */
 .blog-details .details-card {
-        max-height: 100%;
-        border: none;
-        max-width: 800px;
-    }
+    max-height: 100%;
+    border: none;
+    max-width: 800px;
+}
 
 .blog-details .card-img-content img {
     border-top-left-radius: 10px;
@@ -1234,6 +1282,168 @@ header .navbar-toggler:focus {
 
 /* ========= feedback Section end ========== */
 
+/* ========= Store Section start ========== */
+
+.store-scole{
+   background-color: var(--light-color);
+    color: var(--white-color);
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+.store .left-side-grid-store {
+    margin: 0px auto;
+    color: var(--white-color);
+    border-right: 1px solid var(--secondary-color);
+    padding-right: 20px;
+}
+
+.store .left-side-title {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.store .nav-item {
+    margin-top: 50px;
+}
+
+.store .yellow-color {
+    color: gold;
+}
+
+
+.store .clear {
+    font-size: 12px;
+    color: var(--light-color);
+}
+
+.store .right-icon {
+    font-size: 12px;
+    transition: all 0.4s;
+}
+
+.store .right-side-grid-store {
+    color: var(--white-color);
+    padding-left: 20px;
+}
+
+.store .right-side-icon {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+
+.store-single-card {
+    color: var(--light-color);
+    background: linear-gradient(90deg, #00090b 0%, var(--bg-dark) 100%);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.store-card-icon {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+
+.right-side-grid-store .card {
+    margin-bottom: 20px;
+}
+
+.store-card-money {
+    font-size: 14px;
+    padding: 4px 0px 0px 0px;
+    margin: 4px 0px 0px 0px;
+    color: var(--white-color);
+}
+
+.store-card-rating {
+    font-size: 12px;
+}
+
+.store-card-title {
+    font-size: 15px;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+.store .store-button-toggle {
+    background-color: transparent;
+    outline: none;
+    color: var(--white-color);
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--bg-light);
+    padding: 6px 12px;
+    border-radius: 8px;
+
+}
+
+.store .dropdown-menu {
+    background: linear-gradient(var(--bg-light), var(--bg-dark));
+    color: var(--white-color);
+    border: none;
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform:
+    translate3d(0px, 39.2px, 0px);
+}
+
+
+.store .dropdown-menu .dropdown-item:hover {
+    background: none !important;
+    color: var(--white-color);
+    border: none;
+}
+
+.store .dropdown-item {
+    color: var(--white-color);
+}
+
+.store .price {
+    margin-top: 30px;
+}
+
+.store .form-check {
+    font-size: 12px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.store-scrollbar {
+    overflow-y: scroll;
+    height: 150px;
+}
+
+.store-scrollbar::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+.store-scrollbar::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+.store-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #c3c2c2;
+}
+
+.high-low-price{
+    font-size: 12px;
+}
+
+
+/* ========= Store Section end ========== */
 
 
 footer {
@@ -1305,6 +1515,11 @@ Responsive Section
         padding: 8px 16px;
     }
 
+
+    .dredcom {
+        height: 200px;
+    }
+
     /* common Section end */
 
 
@@ -1357,6 +1572,7 @@ Responsive Section
         font-size: 25px;
         font-weight: 500;
         margin-top: 32px;
+        text-align: center;
     }
 
     .image {
@@ -1399,6 +1615,16 @@ Responsive Section
     }
 
     /* ========= banner Section end ========== */
+
+
+    /* ========= prince Section end ========== */
+
+    .price .card-money {
+        font-size: 28px;
+    }
+
+    /* ========= prince Section end ========== */
+
 
     /* ========= blogs Section end ========== */
 
@@ -1479,15 +1705,115 @@ Responsive Section
 
     /* ========= service Section end ========== */
 
+
+    /* ========= Store Section start ========== */
+
+    .right-side-grid-store .card {
+        margin-bottom: 20px;
+    }
+
+    .store-card-icon {
+        padding: 10px 0px;
+        position: absolute;
+        left: 200px;
+        bottom: -5px;
+        border-radius: 100%;
+        width: 50px !important;
+    }
+
+
+    /* ========= Store Section start ========== */
+
 }
 
 /* ========= Mobile Device ========== */
 
 @media (max-width: 767px) {
 
-    .dredcom h3 {
-        font-size: 28px;
+    /* ========= Common Section start ========== */
+
+    .dredcom {
+        height: 150px;
     }
+
+    .dredcom h3 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .btn-primary {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .bar::after {
+        margin: 0px auto 0px auto;
+        margin-top: 8px;
+    }
+
+
+      /* ========= Common Section end ========== */
+
+
+
+        /* ========= header Section end ========== */
+
+        header .logo h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        header .logo img {
+            height: 40px;
+        }
+
+        .bar-section {
+            padding: 9px 10px;
+            border-radius: 8px;
+        }
+
+
+        .bar-section .bar-3, .bar-section .bar-4 {
+            justify-content: center;
+            padding: 5px;
+            box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+    /* ========= header Section end ========== */
+
+    /* ========= hero Section start ========== */
+
+    .hero {
+        margin-top: 50px !important;
+    }
+
+    .hero .hero-text {
+        margin-top: 40px;
+        height: 200px;
+    }
+
+    .hero .hero-text h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .hero .hero-text h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .hero .hero-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+    /* ========= hero Section start ========== */
+
 
     /* ========= About Section start ========== */
 
@@ -1495,6 +1821,52 @@ Responsive Section
     .about-text .about-car-card {
         width: 100%;
     }
+
+    .about-img .img-background {
+        display: none;
+    }
+
+    .about-img {
+        position: sticky;
+    }
+
+    .about-img .image {
+        position: sticky;
+    }
+
+    .image {
+        right: 0px;
+        max-width: 500px;
+        overflow: hidden;
+        position: sticky;
+    }
+
+    .about-text {
+        margin-top: 20px;
+
+    }
+
+    .about-text h6 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-text h6 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        margin: 16px 0;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .about-text .about-car-card h5 {
+        font-size: 10px;
+    }
+
 
     /* ========= About Section end ========== */
 
@@ -1520,6 +1892,10 @@ Responsive Section
         width: 300px;
     }
 
+    .price .card-money {
+        font-size: 32px;
+    }
+
     /* ========= prince Section end ========== */
 
     /* ========= blogs Section end ========== */
@@ -1534,6 +1910,27 @@ Responsive Section
 
 
     /* ========= blogs Section end ========== */
+
+    /* ========= team Section end ========== */
+
+    .team-card .team-shape {
+        display: none;
+    }
+
+    .team-text {
+        text-align: center;
+    }
+
+    .team-text .team-info {
+        margin-top: 2px;
+    }
+
+    .team-text .team-title {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    /* ========= team Section end ========== */
 
     /* ========= contact Section end ========== */
 
@@ -1570,6 +1967,11 @@ Responsive Section
         margin: 30px 0px;
     }
 
+    .portfolio h6 {
+        font-size: 12px;
+        text-align: center;
+    }
+
     /* ========= portfolio Section end ========== */
 
     /* ========= service Section start ========== */
@@ -1585,4 +1987,84 @@ Responsive Section
 
     /* ========= service Section end ========== */
 
+
+    /* ========= Store Section start ========== */
+
+    .right-side-grid-store .card {
+        margin-bottom: 20px;
+    }
+
+    .left-side-grid-store {
+        /* margin: 0px auto; */
+        color: var(--white-color);
+        border-right: none;
+        padding-right: 10px;
+    }
+
+    .store .right-side-grid-store {
+        /* color: var(--white-color); */
+        padding-left: 10px;
+    }
+
+    .store-card-icon {
+        display: none;
+    }
+
+    .store .store-button-toggle {
+        border: 1px solid var(--bg-light);
+        padding: 3px;
+        border-radius: 8px;
+    }
+
+
+    .bar-section {
+       display: none;
+    }
+
+    .store .left-side-grid-store {
+        border-right: none;
+        padding-right: 10px;
+    }
+
+    /* ========= Store Section end ========== */
+
+
+    footer .footer-section h3 {
+        font-size: 18px;
+    }
+
+    footer .footer-section ul li {
+        color: var(--light-color);
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    footer .footer-section .touch-filed .btn-touch {
+        padding: 0px 18px;
+    }
+
+    footer .footer-section .get-touch {
+        padding: 16px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .input-group {
+        margin-top: 10px;
+    }
 }
