@@ -111,138 +111,179 @@
 
     <main>
 
-        <!-- ========= Product Details Section Start ========= -->
+        <!-- ========= Product Details  Section Start ========= -->
+
         <section id="product-details" class="product-details">
             <div class="container">
                 <div class="row">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img id="change" src="./asset/images/store/products-img2.png" class="img-fluid rounded-start"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h2 class="card-title">Audi Electric Car</h2>
-                                    <h3 class="text-decoration-line-through card-price mt-4">$203</h3>
-                                    <div class="d-flex gap-4 align-items-center mt-2">
-                                        <p class="fs-3"><b>$153</b></p>
-                                        <h3 class="product-details-save">save 20%</h3>
+                    <div class="col-lg-6">
+                        <div class=" d-flex align-items-center justify-content-center ">
+                            <img id="mainImage" class="products-details-image img-fluid"
+                                src="./asset/images/store/products-img2.png" alt="">
+                        </div>
+                        <!-- Swiper -->
+                        <div class="position-relative">
+                            <div class="swiper product-detailsSwiper overflow-y-auto">
+                                <div class="swiper-wrapper">
+                                    <div
+                                        class="swiper-slide d-flex justify-content-center align-items-center border rounded-2">
+                                        <img onclick="changeMainImage(this)" class="img-fluid products-card-image"
+                                            src="./asset/images/store/products-img2.png" alt="product image">
                                     </div>
-                                    <div class="d-flex align-items-center gap-3 my-2">
-                                        <label class="form-check-label mt-1" for="Rating-5">
-                                            <i onclick="fileColor1()" class="fa-solid fa-star fill fillColor1"></i>
-                                            <i onclick="fileColor2()" class="fa-solid fa-star fill fillColor2"></i>
-                                            <i onclick="fileColor3()" class="fa-solid fa-star fill fillColor3"></i>
-                                            <i onclick="fileColor4()" class="fa-solid fa-star fill fillColor4"></i>
-                                            <i onclick="fileColor5()" class="fa-solid fa-star fill fillColor5"></i>
-                                        </label>
-                                        <p class="mt-2">200+ Reviews</p>
+                                    <div
+                                        class="swiper-slide d-flex justify-content-center align-items-center border rounded-2">
+                                        <img onclick="changeMainImage(this)" class="img-fluid products-card-image"
+                                            src="./asset/images/store/products-img3.png" alt="product image">
                                     </div>
-                                    <div>
-                                        <h4>Availability : <b class="in-stock"> In Stock</b></h4>
+                                    <div
+                                        class="swiper-slide d-flex justify-content-center align-items-center border rounded-2">
+                                        <img onclick="changeMainImage(this)" class="img-fluid products-card-image"
+                                            src="./asset/images/store/products-img4.png" alt="product image">
                                     </div>
-                                    <div class="my-2">
-                                        <h3 class="size">Size</h3>
-                                        <div class="d-flex gap-3 my-2 size-input">
-                                            <h3>S</h3>
-                                            <h3>M</h3>
-                                            <h3>L</h3>
-                                            <h3>XL</h3>
-                                        </div>
+                                    <div
+                                        class="swiper-slide d-flex justify-content-center align-items-center border rounded-2">
+                                        <img onclick="changeMainImage(this)" class="img-fluid products-card-image"
+                                            src="./asset/images/store/products-img5.png" alt="product image">
                                     </div>
-                                    <p class="my-2">
-                                        Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-                                        ab illo .
-                                    </p>
-                                    <div class="d-flex align-items-center gap-3">
-                                        <span>Quantity:</span>
-                                        <div class="d-flex align-items-center gap-4 quantity">
-                                            <h3>-</h3>
-                                            <h3>2</h3>
-                                            <h3>+</h3>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary mt-3">add to card</button>
+                                    <div
+                                        class="swiper-slide d-flex justify-content-center align-items-center border rounded-2">
+                                        <img onclick="changeMainImage(this)" class="img-fluid products-card-image"
+                                            src="./asset/images/store/products-img7.png" alt="product image">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="swiper-button-next product-details-nav"></div>
+                            <div class="swiper-button-prev product-details-nav"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-container mt-5 mt-lg-0">
+                        <div class="card-body">
+                            <h2 class="card-title">Audi Electric Car</h2>
+                            <h3 class="text-decoration-line-through card-price my-2">$203</h3>
+                            <div class="d-flex gap-4 align-items-center my-1">
+                                <p class="fs-3"><b>$153</b></p>
+                                <h3 class="product-details-save">save 20%</h3>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 my-2">
+                                <label class="form-check-label mt-1" for="Rating-5">
+                                    <i onclick="fileColor1()" class="fa-solid fa-star fill fillColor1"></i>
+                                    <i onclick="fileColor2()" class="fa-solid fa-star fill fillColor2"></i>
+                                    <i onclick="fileColor3()" class="fa-solid fa-star fill fillColor3"></i>
+                                    <i onclick="fileColor4()" class="fa-solid fa-star fill fillColor4"></i>
+                                    <i onclick="fileColor5()" class="fa-solid fa-star fill fillColor5"></i>
+                                </label>
+                                <p class="mt-2 reviews-text">(200+ Reviews)</p>
+                            </div>
+                            <div class="my-3">
+                                <h4>Availability : <b class="in-stock"> In Stock</b></h4>
+                            </div>
+                            <div class="my-3">
+                                <h3 class="size">Size</h3>
+                                <div class="d-flex gap-3 my-2">
+                                    <input type="text" class="text-center size-input" value="S">
+                                    <input type="text" class="text-center size-input" value="M">
+                                    <input type="text" class="text-center size-input" value="L">
+                                    <input type="text" class="text-center size-input" value="XL">
+                                </div>
+                            </div>
+                            <div class="my-3">
+                                <h5 class="mb-2">Color</h5>
+                                <div class="d-flex gap-2" data-toggle="buttons">
+                                    <label>
+                                        <span class="d-inline-block product-color-withe"></span>
+                                    </label>
+                                    <label class=" ">
+                                        <span class="d-inline-block">
+                                            <input class="product-color-black" type="color">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 my-3">
+                            <span>Quantity:</span>
+                            <div class="d-flex align-items-center gap-2 ">
+                                <div>
+                                    <button class="px-2 py-0 quantity-btn" id="decrease">-</button>
+                                </div>
+                                <input type="text" class="text-center quantity-input" id="quantity" value="1">
+                                <div>
+                                    <button class="px-2 py-0 quantity-btn" id="increase">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary mt-3 d-flex gap-2">add to card <i
+                                    class="fa-solid fa-cart-shopping mt-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <!-- ========= Product Details Section end ========= -->
+
+        <!-- tabs section start-->
+        <div id="tabs-section" class="tabs-section">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-uppercase active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                                    aria-selected="true">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-uppercase" id="recent-loan" data-bs-toggle="tab"
+                                    data-bs-target="#product-date" type="button" role="tab" aria-controls="product-date"
+                                    aria-selected="false">Product Details</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-uppercase" id="recent-subscription" data-bs-toggle="tab"
+                                    data-bs-target="#recent-subscription-pane" type="button" role="tab"
+                                    aria-controls="recent-subscription-pane" aria-selected="false">review</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active mt-2" id="description" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <p>If you want a text-only review for a product, where the review is just plain text
+                                    without any additional buttons, forms, or extra elements, the structure can be very
+                                    simple. Here’s an example of how you can implement it using basic HTML and Bootstrap
+                                    classes for structure and spacing. If you want a text-only review for a product,
+                                    where the review is just plain text without any additional buttons, forms, or extra
+                                    elements, the structure can be very simple. Here’s an example of how you can
+                                    implement it using basic HTML and Bootstrap classes for structure and spacing</p>
+                            </div>
+                            <div class="tab-pane fade mt-2" id="product-date" role="tabpanel"
+                                aria-labelledby="recent-loan" tabindex="0">
+                                <p>If you want a text-only review for a product, where the review is just plain text
+                                    without any additional buttons, forms, or extra elements, the structure can be very
+                                    simple. Here’s an example of how you can implement it using basic HTML and Bootstrap
+                                    classes for structure and spacing. If you want a text-only review for a product,
+                                    where the review is just plain text without any additional buttons, forms, or extra
+                                    elements, the structure can be very simple. Here’s an example of how you can
+                                    implement it using basic HTML and Bootstrap classes for structure and spacing</p>
+                            </div>
+                            <div class="tab-pane fade mt-2" id="recent-subscription-pane" role="tabpanel"
+                                aria-labelledby="recent-subscription" tabindex="0">
+                                <p>If you want a text-only review for a product, where the review is just plain text
+                                    without any additional buttons, forms, or extra elements, the structure can be very
+                                    simple. Here’s an example of how you can implement it using basic HTML and Bootstrap
+                                    classes for structure and spacing. If you want a text-only review for a product,
+                                    where the review is just plain text without any additional buttons, forms, or extra
+                                    elements, the structure can be very simple. Here’s an example of how you can
+                                    implement it using basic HTML and Bootstrap classes for structure and spacing</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ========= Product Details Section End ========= -->
-
-        <!-- ========= Team Section Start ========= -->
-    <div id="team" class="team product-details-team">
-        <div class="container p-0 m-0 mx-auto">
-          <div class="team-section">
-            <div class="swiper product-details-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide py-4">
-                  <div class=" position-relative">
-                    <div class="card">
-                        <div class="card-b d-flex align-content-center justify-content-centerody">
-                         <img id="change" class="img-fluid w-75 h-100" src="./asset/images/store/products-img2.png" alt="">
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="swiper-slide py-4">
-                  <div class="position-relative">
-                    <div class="card">
-                        <div class="card-body d-flex align-content-center justify-content-center">
-                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img3.png" alt="">
-                           </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="swiper-slide py-4">
-                  <div class="position-relative">
-                    <div class="card">
-                        <div class="card-body d-flex align-content-center justify-content-center">
-                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img4.png" alt="">
-                           </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="swiper-slide py-4">
-                  <div class="position-relative">
-                    <div class="card">
-                        <div class="card-body d-flex align-content-center justify-content-center">
-                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img5.png" alt="">
-                           </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="swiper-slide py-4">
-                  <div class="position-relative">
-                    <div class="card">
-                        <div class="card-body d-flex align-content-center justify-content-center">
-                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img8.png" alt="">
-                           </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="swiper-slide py-4">
-                  <div class="position-relative">
-                    <div class="card">
-                        <div class="card-body d-flex align-content-center justify-content-center">
-                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img9.png" alt="">
-                           </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next service-nav"></div>
-              <div class="swiper-button-prev service-nav"></div>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- ========= Team Section End ========= -->
+        <!-- tabs section end-->
+
 
     </main>
 
@@ -307,6 +348,8 @@
 
 
     <script>
+
+        
         let Color1 = document.querySelector('.fillColor1');
         let Color2 = document.querySelector('.fillColor2');
         let Color3 = document.querySelector('.fillColor3');
@@ -354,6 +397,31 @@
         }
 
 
+        const decreaseButton = document.getElementById('decrease');
+        const increaseButton = document.getElementById('increase');
+        const quantityInput = document.getElementById('quantity');
+
+
+        decreaseButton.addEventListener('click', function () {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+
+
+        increaseButton.addEventListener('click', function () {
+            let currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+        });
+
+
+        function changeMainImage(thumbnail) {
+
+            const mainImage = document.getElementById('mainImage');
+
+            mainImage.src = thumbnail.src;
+        }
 
 
     </script>

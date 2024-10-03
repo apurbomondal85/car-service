@@ -67,27 +67,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Product Details Swiper
 
-    var teamSwiper = new Swiper(".product-details-swiper", {
-      slidesPerView: 5,
-      spaceBetween: 30,
-      loop: true,
+    var productDetailsSwiper = new Swiper(".product-detailsSwiper", {
       loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
       breakpoints: {
-        0: {
+        640: {
           slidesPerView: 1,
           spaceBetween: 20,
         },
         768: {
           slidesPerView: 2,
-          spaceBetween: 30,
+          spaceBetween: 20,
         },
         1024: {
-          slidesPerView: 5,
-          spaceBetween: 30,
+          slidesPerView: 4,
+          spaceBetween: 20,
         },
       }
     });
