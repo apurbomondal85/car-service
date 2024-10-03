@@ -1318,7 +1318,14 @@ header .navbar-toggler:focus {
 
 .store .right-icon {
     font-size: 12px;
+}
+
+.store .nav-item .right-icon {
     transition: all 0.4s;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+    transform: rotate(180deg);
 }
 
 .store .right-side-grid-store {
@@ -1444,6 +1451,77 @@ header .navbar-toggler:focus {
 
 
 /* ========= Store Section end ========== */
+
+/* ========= Product Details Section start ========== */
+
+.product-details .card{
+    /* background: linear-gradient(90deg, #00090b 0%, var(--bg-dark) 100%); */
+    background: none;
+    border: none;
+    height: 70vh;
+    color: var(--light-color);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.product-details .card .card-title{
+   font-size: 32px;
+}
+.product-details .card-price{
+    font-size: 18px;
+}
+
+.product-details-save{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 6px 12px;
+}
+
+.product-details .fill{
+    font-size: 12px;
+}
+
+.yellow-color {
+    color: gold;
+}
+
+.in-stock{
+    color: var(--primary-color);
+}
+
+.quantity h3{
+    border: 0.1px solid var(--secondary-color);
+    padding: 5px 8px;
+    font-size: 18px;
+}
+
+.size{
+    color: var(--light-color);
+    font-weight: 600;
+}
+
+.size-input h3{
+    border: 3px solid var(--white-color);
+    background: var(--white-color);
+    padding: 3px 5px;
+    color: var(--bg-dark);
+}
+
+.size-input h3:hover{
+    border: 3px solid var(--primary-color);
+    transition-duration: 1s;
+
+}
+
+.product-details-team{
+    margin-top: 20px;
+}
+
+.product-details-swiper .card{
+    border: none;
+}
+
+
+/* ========= Product Details Section end ========== */
 
 
 footer {

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service</title>
+
+    <!-- ======== Bootstrap css Link ======== -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+
+    <!-- ======== Custom css Link ======== -->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- ======== Google Font Link ======== -->
+    <link rel="stylesheet" href="asset/css/font.css">
+
+    <!-- ======== Font Awesome Link ======== -->
+    <link rel="stylesheet" href="asset/css/all.min.css">
+
+    <!-- ========  Swiper Js Link ======== -->
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+</head>
+
+<body>
+
+
+    <!-- ========= Header Section Start ========= -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo d-flex align-items-center" href="#">
+                    <img src="asset/images/logo.webp" alt="car service logo">
+                    <h1>DriveWorx</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                                <li><a class="dropdown-item" href="./home.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="./about-us.html">About Us 1</a></li>
+                                <li><a class="dropdown-item" href="#">About Us 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./service-list.html">Service List</a></li>
+                                <li><a class="dropdown-item" href="./service-details.html">Service Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="./project-list.html">Projects List</a></li>
+                                <li><a class="dropdown-item" href="./project-details.html">Projects Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                                <li><a class="dropdown-item" href="./blog-list.html">Blog List</a></li>
+                                <li><a class="dropdown-item" href="./blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./store.html" role="button">
+                                Store
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========= Header Section End ========= -->
+
+    <!-- ========= dredcom Section Start ========= -->
+    <div class="dredcom">
+        <h3 class="text-center">Product Details</h3>
+    </div>
+    <!-- ========= dredcom Section End ========= -->
+
+
+    <main>
+
+        <!-- ========= Product Details Section Start ========= -->
+        <section id="product-details" class="product-details">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img id="change" src="./asset/images/store/products-img2.png" class="img-fluid rounded-start"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h2 class="card-title">Audi Electric Car</h2>
+                                    <h3 class="text-decoration-line-through card-price mt-4">$203</h3>
+                                    <div class="d-flex gap-4 align-items-center mt-2">
+                                        <p class="fs-3"><b>$153</b></p>
+                                        <h3 class="product-details-save">save 20%</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 my-2">
+                                        <label class="form-check-label mt-1" for="Rating-5">
+                                            <i onclick="fileColor1()" class="fa-solid fa-star fill fillColor1"></i>
+                                            <i onclick="fileColor2()" class="fa-solid fa-star fill fillColor2"></i>
+                                            <i onclick="fileColor3()" class="fa-solid fa-star fill fillColor3"></i>
+                                            <i onclick="fileColor4()" class="fa-solid fa-star fill fillColor4"></i>
+                                            <i onclick="fileColor5()" class="fa-solid fa-star fill fillColor5"></i>
+                                        </label>
+                                        <p class="mt-2">200+ Reviews</p>
+                                    </div>
+                                    <div>
+                                        <h4>Availability : <b class="in-stock"> In Stock</b></h4>
+                                    </div>
+                                    <div class="my-2">
+                                        <h3 class="size">Size</h3>
+                                        <div class="d-flex gap-3 my-2 size-input">
+                                            <h3>S</h3>
+                                            <h3>M</h3>
+                                            <h3>L</h3>
+                                            <h3>XL</h3>
+                                        </div>
+                                    </div>
+                                    <p class="my-2">
+                                        Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                        ab illo .
+                                    </p>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <span>Quantity:</span>
+                                        <div class="d-flex align-items-center gap-4 quantity">
+                                            <h3>-</h3>
+                                            <h3>2</h3>
+                                            <h3>+</h3>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary mt-3">add to card</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========= Product Details Section End ========= -->
+
+        <!-- ========= Team Section Start ========= -->
+    <div id="team" class="team product-details-team">
+        <div class="container p-0 m-0 mx-auto">
+          <div class="team-section">
+            <div class="swiper product-details-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide py-4">
+                  <div class=" position-relative">
+                    <div class="card">
+                        <div class="card-b d-flex align-content-center justify-content-centerody">
+                         <img id="change" class="img-fluid w-75 h-100" src="./asset/images/store/products-img2.png" alt="">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide py-4">
+                  <div class="position-relative">
+                    <div class="card">
+                        <div class="card-body d-flex align-content-center justify-content-center">
+                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img3.png" alt="">
+                           </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide py-4">
+                  <div class="position-relative">
+                    <div class="card">
+                        <div class="card-body d-flex align-content-center justify-content-center">
+                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img4.png" alt="">
+                           </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide py-4">
+                  <div class="position-relative">
+                    <div class="card">
+                        <div class="card-body d-flex align-content-center justify-content-center">
+                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img5.png" alt="">
+                           </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide py-4">
+                  <div class="position-relative">
+                    <div class="card">
+                        <div class="card-body d-flex align-content-center justify-content-center">
+                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img8.png" alt="">
+                           </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide py-4">
+                  <div class="position-relative">
+                    <div class="card">
+                        <div class="card-body d-flex align-content-center justify-content-center">
+                            <img class="img-fluid w-75 h-100" src="./asset/images/store/products-img9.png" alt="">
+                           </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next service-nav"></div>
+              <div class="swiper-button-prev service-nav"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========= Team Section End ========= -->
+
+    </main>
+
+    <!-- ========= Footer Section Start ========= -->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div class="row py-4">
+                    <div class="col-6  col-md-4 col-lg-2 text-center text-lg-start">
+                        <h3>Company</h3>
+                        <ul>
+                            <li>About</li>
+                            <li>Team</li>
+                            <li>FAQ</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mt-md-0 mt-lg-0 text-center text-lg-start">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Tire Rotation</li>
+                            <li>Oil Change</li>
+                            <li>AC Repair</li>
+                            <li>Suspension Repair</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0 mt-lg-0 text-center text-lg-start">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li>+0992392944</li>
+                            <li>apurbo@example.com</li>
+                            <li>Old city Street,USA
+                                1212 New york-3500</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="get-touch">
+                            <h2>Get In Touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus explicabo eos
+                                eius, nostrum consectetur.</p>
+                            <div class="touch-filed input-group">
+                                <input type="email" class="p-1" placeholder="Enter Email Address">
+                                <button class="btn btn-touch">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-xl-flex justify-content-between align-items-center py-3 border-1 border-top mt-4 mt-lg-0">
+                    <p class="copyright text-center">© <span>DriveWorx</span> 2024 | All Rights Reserved</p>
+                    <div class="d-flex align-items-center justify-content-center mt-3 mt-xl-0">
+                        <a href="#">Terms & Condition</a>
+                        <a href="#" class="mx-4">Privacy Policy</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========= Footer Section End ========= -->
+
+
+    <script>
+        let Color1 = document.querySelector('.fillColor1');
+        let Color2 = document.querySelector('.fillColor2');
+        let Color3 = document.querySelector('.fillColor3');
+        let Color4 = document.querySelector('.fillColor4');
+        let Color5 = document.querySelector('.fillColor5');
+
+        const fileColor1 = () => {
+            if (Color1.classList.contains('yellow-color')) {
+                Color1.classList.remove('yellow-color');
+            } else {
+                Color1.classList.add('yellow-color');
+            }
+        }
+
+        const fileColor2 = () => {
+            if (Color2.classList.contains('yellow-color')) {
+                Color2.classList.remove('yellow-color');
+            } else {
+                Color2.classList.add('yellow-color');
+            }
+        }
+
+        const fileColor3 = () => {
+            if (Color3.classList.contains('yellow-color')) {
+                Color3.classList.remove('yellow-color');
+            } else {
+                Color3.classList.add('yellow-color');
+            }
+        }
+
+        const fileColor4 = () => {
+            if (Color4.classList.contains('yellow-color')) {
+                Color4.classList.remove('yellow-color');
+            } else {
+                Color4.classList.add('yellow-color');
+            }
+        }
+
+        const fileColor5 = () => {
+            if (Color5.classList.contains('yellow-color')) {
+                Color5.classList.remove('yellow-color');
+            } else {
+                Color5.classList.add('yellow-color');
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+    <!-- ======== Bootstrap js Link ======== -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ======== Custom js Link ======== -->
+    <script src="asset/js/script.js"></script>
+
+    <!-- ======== Swiper js Link ======== -->
+    <script src="asset/js/swiper-bundle.min.js"></script>
+</body>
+
+</html>

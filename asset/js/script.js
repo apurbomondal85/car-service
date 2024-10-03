@@ -65,6 +65,34 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+    // Product Details Swiper
+
+    var teamSwiper = new Swiper(".product-details-swiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      loop: true,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+      }
+    });
+
+
   const navbar = document.getElementById("header");
 
 
@@ -91,6 +119,8 @@ let grid = document.getElementById('grid').childNodes;
 let bar3 = document.querySelector('.bar-3');
 let bar4 = document.querySelector('.bar-4');
 
+
+
 const grid3 = () => {
   grid.forEach(item => {
     if (item.nodeType === Node.ELEMENT_NODE && item.tagName === 'DIV') {
@@ -112,3 +142,6 @@ const grid4 = () => {
     }
   });
 }
+
+
+
